@@ -1,12 +1,24 @@
 import Phaser from 'phaser';
-import { Physics, RAPIER, PX_PER_M, mToPx } from '../physics.js';
+import { Physics, PX_PER_M, mToPx } from '../physics.js';
+import { cfg } from '../config.js';
+import { TRACK, TRACK_BOUNDS, PERIMETER, sampleLine } from '../track.js';
+import { Rig, TRUCK, TRAILER } from '../rig.js';
 
-// M1 scaffold: proves Phaser renders, Rapier's WASM loaded and the fixed step runs.
-// The box and walls below are throwaway — M2 replaces them with the track and truck.
+const VIEW_W = 540;
+const VIEW_H = 960;
 
-const FIELD_W_M = 540 / PX_PER_M;
-const FIELD_H_M = 960 / PX_PER_M;
-const BOX_M = 1.6;
+const COL = {
+  asphalt: 0x3a3f47,
+  infield: 0x2f3a2c,
+  line: 0x6d7683,
+  truck: 0x4a78c4,
+  cab: 0x2f5596,
+  deck: 0x8a6a42,
+  deckEdge: 0xb08a55,
+  ramp: 0xd8a441,
+  headboard: 0xc25a3a,
+  drawbar: 0x555b64,
+};
 
 export default class PlayScene extends Phaser.Scene {
   constructor() {
@@ -15,73 +27,147 @@ export default class PlayScene extends Phaser.Scene {
 
   create() {
     this.physics2 = new Physics();
-    const world = this.physics2.world;
+    this.rig = new Rig(this.physics2.world);
 
-    // Four static walls around the visible field.
-    const wall = (x, y, hw, hh) => {
-      const body = world.createRigidBody(RAPIER.RigidBodyDesc.fixed().setTranslation(x, y));
-      world.createCollider(RAPIER.ColliderDesc.cuboid(hw, hh).setRestitution(1).setFriction(0), body);
-    };
-    const t = 1;
-    wall(FIELD_W_M / 2, -t, FIELD_W_M / 2, t);
-    wall(FIELD_W_M / 2, FIELD_H_M + t, FIELD_W_M / 2, t);
-    wall(-t, FIELD_H_M / 2, t, FIELD_H_M / 2);
-    wall(FIELD_W_M + t, FIELD_H_M / 2, t, FIELD_H_M / 2);
+    this.drawTrack();
 
-    // One dynamic box, launched diagonally. If it moves, the whole chain works.
-    this.boxBody = world.createRigidBody(
-      RAPIER.RigidBodyDesc.dynamic()
-        .setTranslation(FIELD_W_M / 2, FIELD_H_M / 2)
-        .setLinvel(9, 13)
-        .setAngvel(1.5)
-        .setLinearDamping(0)
-        .setAngularDamping(0)
-    );
-    world.createCollider(
-      RAPIER.ColliderDesc.cuboid(BOX_M / 2, BOX_M / 2).setRestitution(1).setFriction(0).setDensity(1),
-      this.boxBody
-    );
+    this.rigGfx = this.add.graphics().setDepth(10);
 
-    this.boxGfx = this.add.rectangle(0, 0, mToPx(BOX_M), mToPx(BOX_M), 0xe8503a).setOrigin(0.5);
+    this.overview = false;
+    this.cameras.main.setBackgroundColor(COL.infield);
 
-    this.add
-      .text(270, 60, 'TRAILER RACE\nM1 scaffold', {
+    this.hud = this.add
+      .text(12, 12, '', { fontFamily: 'monospace', fontSize: '18px', color: '#c8d0da' })
+      .setScrollFactor(0)
+      .setDepth(100);
+
+    this.hint = this.add
+      .text(VIEW_W / 2, VIEW_H - 24, 'tap / Z — toggle overview', {
         fontFamily: 'monospace',
-        fontSize: '28px',
+        fontSize: '16px',
         color: '#7f8a99',
-        align: 'center',
       })
-      .setOrigin(0.5);
+      .setOrigin(0.5)
+      .setScrollFactor(0)
+      .setDepth(100);
 
-    this.statusText = this.add
-      .text(270, 880, '', {
-        fontFamily: 'monospace',
-        fontSize: '20px',
-        color: '#7f8a99',
-        align: 'center',
-      })
-      .setOrigin(0.5);
+    this.input.on('pointerdown', () => this.toggleOverview());
+    this.input.keyboard?.on('keydown-Z', () => this.toggleOverview());
 
-    // Touch check: a tap kicks the box toward the pointer, so the phone's input path is proven too.
-    this.input.on('pointerdown', (p) => {
-      const to = this.boxBody.translation();
-      const dx = p.worldX / PX_PER_M - to.x;
-      const dy = p.worldY / PX_PER_M - to.y;
-      const len = Math.hypot(dx, dy) || 1;
-      this.boxBody.applyImpulse({ x: (dx / len) * 6, y: (dy / len) * 6 }, true);
-      this.taps = (this.taps ?? 0) + 1;
-    });
+    this.applyCamera();
+  }
+
+  toggleOverview() {
+    this.overview = !this.overview;
+    this.applyCamera();
+  }
+
+  applyCamera() {
+    const cam = this.cameras.main;
+    if (this.overview) {
+      const zx = VIEW_W / (mToPx(TRACK_BOUNDS.halfW) * 2 + 40);
+      const zy = VIEW_H / (mToPx(TRACK_BOUNDS.halfH) * 2 + 40);
+      cam.setZoom(Math.min(zx, zy));
+      cam.centerOn(0, 0);
+    } else {
+      cam.setZoom(1);
+    }
+  }
+
+  /** Asphalt is drawn once: outer polygon filled, then the infield punched back out. */
+  drawTrack() {
+    const g = this.add.graphics().setDepth(0);
+    const half = TRACK.width / 2;
+    const STEP = 1.5; // metres between samples
+
+    const outer = [];
+    const inner = [];
+    for (let s = 0; s < PERIMETER; s += STEP) {
+      const p = sampleLine(s);
+      const rx = -Math.sin(p.angle);
+      const ry = Math.cos(p.angle);
+      outer.push(new Phaser.Math.Vector2(mToPx(p.x + rx * half), mToPx(p.y + ry * half)));
+      inner.push(new Phaser.Math.Vector2(mToPx(p.x - rx * half), mToPx(p.y - ry * half)));
+    }
+
+    g.fillStyle(COL.asphalt, 1);
+    g.fillPoints(outer, true);
+    g.fillStyle(COL.infield, 1);
+    g.fillPoints(inner, true);
+
+    // Dashed racing line down the middle.
+    g.lineStyle(2, COL.line, 0.5);
+    for (let s = 0; s < PERIMETER; s += 8) {
+      const a = sampleLine(s);
+      const b = sampleLine(s + 4);
+      g.lineBetween(mToPx(a.x), mToPx(a.y), mToPx(b.x), mToPx(b.y));
+    }
   }
 
   update(_time, delta) {
-    this.physics2.step(delta);
+    this.physics2.step(delta, (dt) => this.rig.step(dt));
+    this.drawRig();
 
-    const p = this.boxBody.translation();
-    this.boxGfx.setPosition(mToPx(p.x), mToPx(p.y));
-    this.boxGfx.setRotation(this.boxBody.rotation());
+    const cam = this.cameras.main;
+    const t = this.rig.truck.translation();
+    if (!this.overview) cam.centerOn(mToPx(t.x), mToPx(t.y));
 
-    this.statusText.setText(
-      `rapier ok · ${Math.round(this.game.loop.actualFps)} fps · taps ${this.taps ?? 0}\ntap to kick the box`
+    const tp = this.rig.pose();
+    const yaw = Phaser.Math.RadToDeg(
+      Phaser.Math.Angle.Wrap(tp.angle - this.rig.truck.rotation())
     );
+    this.hud.setText(
+      [
+        `${Math.round(this.game.loop.actualFps)} fps`,
+        `trailer speed ${cfg.trailerSpeed.toFixed(1)} m/s`,
+        `hitch loose   ${cfg.hitchLoose.toFixed(2)}`,
+        `hitch yaw     ${yaw.toFixed(1)}deg`,
+        `lap           ${(this.rig.s / PERIMETER).toFixed(2)}`,
+      ].join('\n')
+    );
+  }
+
+  drawRig() {
+    const g = this.rigGfx;
+    g.clear();
+
+    const box = (body, lx, ly, hw, hh, colour, alpha = 1) => {
+      const t = body.translation();
+      const a = body.rotation();
+      const cx = mToPx(t.x + lx * Math.cos(a) - ly * Math.sin(a));
+      const cy = mToPx(t.y + lx * Math.sin(a) + ly * Math.cos(a));
+      g.save();
+      g.translateCanvas(cx, cy);
+      g.rotateCanvas(a);
+      g.fillStyle(colour, alpha);
+      g.fillRect(-mToPx(hw), -mToPx(hh), mToPx(hw * 2), mToPx(hh * 2));
+      g.restore();
+    };
+
+    // Drawbar from the hitch to the deck.
+    const tr = this.rig.truck.translation();
+    const ta = this.rig.truck.rotation();
+    const hx = mToPx(tr.x + TRUCK.hitchX * Math.cos(ta));
+    const hy = mToPx(tr.y + TRUCK.hitchX * Math.sin(ta));
+    const dp = this.rig.trailer.translation();
+    const da = this.rig.trailer.rotation();
+    g.lineStyle(5, COL.drawbar, 1);
+    g.lineBetween(
+      hx,
+      hy,
+      mToPx(dp.x + TRAILER.drawbarX * Math.cos(da)),
+      mToPx(dp.y + TRAILER.drawbarX * Math.sin(da))
+    );
+
+    // Deck (sensor — drawn, but nothing to bump into on the sides).
+    box(this.rig.trailer, 0, 0, TRAILER.deckHalfLen, TRAILER.deckHalfWid, COL.deck);
+    // Rear ramp edge: the only way on.
+    box(this.rig.trailer, -TRAILER.deckHalfLen + 0.25, 0, 0.25, TRAILER.deckHalfWid, COL.ramp);
+    // Solid headboard.
+    box(this.rig.trailer, TRAILER.headboardX, 0, TRAILER.headboardHalf, TRAILER.deckHalfWid, COL.headboard);
+
+    // Truck.
+    box(this.rig.truck, 0, 0, TRUCK.len / 2, TRUCK.wid / 2, COL.truck);
+    box(this.rig.truck, 0.9, 0, 1.1, TRUCK.wid / 2 - 0.15, COL.cab);
   }
 }
