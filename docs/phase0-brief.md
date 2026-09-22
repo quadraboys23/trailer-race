@@ -89,7 +89,7 @@ Phase 1 costs $0 beyond the existing Claude subscription. Licences are as unders
 | Need | Tool | Licence / cost |
 | --- | --- | --- |
 | Game framework | Phaser 3 | MIT, free |
-| Physics | Rapier 2D (planck.js fallback) | Apache-2.0 / MIT, free |
+| Physics | Rapier 2D | Apache-2.0, free |
 | AI (Phase 2+) | Yuka or hand-rolled state machine | MIT, free |
 | Code and build | Claude Code, VS Code, Node.js, git | Existing subscription / free |
 | Repo | GitHub (private repo) | Free |
