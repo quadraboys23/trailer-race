@@ -38,10 +38,29 @@
       #game canvas {
         display: block;
       }
+      /* A real DOM button, so the touch never reaches the canvas and can never
+         be mistaken for a steering drag once M3 lands. */
+      #overview {
+        position: fixed;
+        top: max(10px, env(safe-area-inset-top));
+        right: max(10px, env(safe-area-inset-right));
+        z-index: 10;
+        padding: 10px 14px;
+        font: 14px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+        color: #c8d0da;
+        background: #262b33;
+        border: 1px solid #454c57;
+        border-radius: 8px;
+        touch-action: manipulation;
+      }
+      #overview[aria-pressed='true'] {
+        background: #3c4a5c;
+      }
     </style>
   </head>
   <body>
     <div id="game"></div>
+    <button id="overview" type="button">overview</button>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

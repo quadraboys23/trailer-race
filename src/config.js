@@ -6,7 +6,7 @@ export const SLIDERS = {
   accel:          { label: 'Acceleration',      min: 2,   max: 40,  step: 0.5,  def: 14,   unit: 'm/s²' },
   tireGrip:       { label: 'Tire grip',         min: 0,   max: 1,   step: 0.01, def: 0.85, unit: '' },
   steerRate:      { label: 'Steering rate',     min: 0.5, max: 8,   step: 0.1,  def: 3.2,  unit: 'rad/s' },
-  trailerSpeed:   { label: 'Trailer speed',     min: 2,   max: 30,  step: 0.5,  def: 13,   unit: 'm/s' },
+  trailerSpeed:   { label: 'Trailer speed',     min: 2,   max: 17,  step: 0.5,  def: 13,   unit: 'm/s' },
   deckGrip:       { label: 'Deck grip',         min: 0,   max: 1,   step: 0.01, def: 0.55, unit: '' },
   overhangPenalty:{ label: 'Overhang penalty',  min: 0,   max: 1,   step: 0.01, def: 0.7,  unit: '' },
   fallImpulse:    { label: 'Fall-off impulse',  min: 0,   max: 20,  step: 0.5,  def: 6,    unit: '' },
@@ -20,6 +20,9 @@ export const TOGGLES = {
 };
 
 /** Live values. Mutated by the debug panel; read every physics step. */
+// Trailer speed tops out at 17 m/s deliberately: measured, a 28m corner radius
+// cannot hold a trailer faster than that at any looseness — past 18 it walks
+// itself into a jackknife. Raise the track radius before raising this.
 export const cfg = {};
 
 // Headless test harnesses import this module with no DOM. Guarding here (rather

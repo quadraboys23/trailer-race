@@ -2,7 +2,7 @@ import Phaser from 'phaser';
 import { Physics, PX_PER_M, mToPx } from '../physics.js';
 import { cfg } from '../config.js';
 import { TRACK, TRACK_BOUNDS, PERIMETER, sampleLine } from '../track.js';
-import { Rig, TRUCK, TRAILER } from '../rig.js';
+import { Rig, TRUCK, TRAILER, stiffnessForLooseness } from '../rig.js';
 
 const VIEW_W = 540;
 const VIEW_H = 960;
@@ -28,12 +28,15 @@ export default class PlayScene extends Phaser.Scene {
   create() {
     this.physics2 = new Physics();
     this.rig = new Rig(this.physics2.world);
+    if (window.__trailer) window.__trailer.scene = this;
+    else window.__trailer = { scene: this };
 
     this.drawTrack();
 
     this.rigGfx = this.add.graphics().setDepth(10);
 
     this.overview = false;
+    this.peakYaw = 0;
     this.cameras.main.setBackgroundColor(COL.infield);
 
     this.hud = this.add
@@ -41,17 +44,10 @@ export default class PlayScene extends Phaser.Scene {
       .setScrollFactor(0)
       .setDepth(100);
 
-    this.hint = this.add
-      .text(VIEW_W / 2, VIEW_H - 24, 'tap / Z — toggle overview', {
-        fontFamily: 'monospace',
-        fontSize: '16px',
-        color: '#7f8a99',
-      })
-      .setOrigin(0.5)
-      .setScrollFactor(0)
-      .setDepth(100);
-
-    this.input.on('pointerdown', () => this.toggleOverview());
+    // Overview is the button top-right or the Z key. Deliberately NOT a tap on
+    // the play area: that becomes the steering input in M3.
+    this.overviewBtn = document.getElementById('overview');
+    this.overviewBtn?.addEventListener('click', () => this.toggleOverview());
     this.input.keyboard?.on('keydown-Z', () => this.toggleOverview());
 
     this.applyCamera();
@@ -59,6 +55,7 @@ export default class PlayScene extends Phaser.Scene {
 
   toggleOverview() {
     this.overview = !this.overview;
+    this.overviewBtn?.setAttribute('aria-pressed', String(this.overview));
     this.applyCamera();
   }
 
@@ -116,12 +113,16 @@ export default class PlayScene extends Phaser.Scene {
     const yaw = Phaser.Math.RadToDeg(
       Phaser.Math.Angle.Wrap(tp.angle - this.rig.truck.rotation())
     );
+    // Slowly-decaying peak: makes a swing legible at a glance on the phone.
+    this.peakYaw = Math.max(Math.abs(yaw), this.peakYaw * 0.995);
     this.hud.setText(
       [
         `${Math.round(this.game.loop.actualFps)} fps`,
         `trailer speed ${cfg.trailerSpeed.toFixed(1)} m/s`,
         `hitch loose   ${cfg.hitchLoose.toFixed(2)}`,
+        `tyre stiff    ${Math.round(stiffnessForLooseness(cfg.hitchLoose))} N/rad`,
         `hitch yaw     ${yaw.toFixed(1)}deg`,
+        `peak yaw      ${this.peakYaw.toFixed(1)}deg`,
         `lap           ${(this.rig.s / PERIMETER).toFixed(2)}`,
       ].join('\n')
     );

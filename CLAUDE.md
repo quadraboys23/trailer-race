@@ -106,8 +106,20 @@ The truck is a **KinematicPositionBased** body driven along the racing line with
 its translation directly — the kinematic velocity has to be visible to the hitch
 joint and to contacts, or the trailer and the car will read the truck as static.
 
-The trailer is a dynamic body on a revolute joint at the hitch. Fishtail comes
-from the trailer's own lateral grip, which is what "hitch looseness" drives.
+The trailer is a dynamic body on a revolute joint at the hitch. Its tyres use a
+**slip-angle** model: lateral force proportional to slip angle, capped at a
+friction limit. "Hitch looseness" lowers the cornering stiffness.
+
+Do not replace this with a force proportional to lateral velocity. That was tried
+twice and fails for a structural reason: such a force is a damper, and a damper
+can only remove energy, so the trailer overshoots by 0.0deg at every slider
+setting and the knob looks broken. Capping the damper does not fix it either — it
+removes damping without adding a restoring force, so the trailer slides wide for
+ever instead of swinging back. Slip angle gives a spring proportional to yaw,
+which is what actually rings down.
+
+Measured at 13 m/s: looseness 0 gives 0.0deg of swing past the steady corner
+angle, 0.4 gives 4.1deg, 1.0 gives 11.9deg and settles in 1.7s.
 
 ## Units and conventions
 
@@ -145,8 +157,13 @@ Claude to change a constant.
 
 ```sh
 npm install
-npm run dev          # http://localhost:5173
+npm run dev          # http://localhost:5180
 ```
+
+The port is **5180, not Vite's default 5173**. Another project on this machine
+binds `[::1]:5173`, and macOS resolves `localhost` to `::1` first, so both
+servers start "successfully" and `localhost:5173` silently serves the wrong app.
+`strictPort` is on so a future clash fails loudly.
 
 On a phone, same Wi-Fi network:
 
@@ -154,8 +171,10 @@ On a phone, same Wi-Fi network:
 npm run dev -- --host
 ```
 
-Vite prints a `Network:` URL (e.g. `http://192.168.x.x:5173`). Open it on the
-phone. Nothing is deployed; there is no hosting step in Phase 1.
+Vite prints a `Network:` URL (e.g. `http://192.168.x.x:5180`). Open it on the
+phone. **Re-read that line every session** — this machine's LAN IP has already
+changed once mid-project, which silently breaks a phone URL from a previous day.
+Nothing is deployed; there is no hosting step in Phase 1.
 
 ```sh
 npm run build        # dist/, only needed when we put it on itch.io

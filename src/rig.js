@@ -27,15 +27,36 @@ TRAILER.inertia = (TRAILER.mass * (TRAILER.deckLen ** 2 + TRAILER.deckWid ** 2))
 // over-corrects by ~30%, which oscillates and then blows the solver up.
 TRAILER.lateralEffMass = 1 / (1 / TRAILER.mass + TRAILER.axleX ** 2 / TRAILER.inertia);
 
-// Hitch looseness -> axle grip, geometrically not linearly. Measured response to a
-// sideways kick: grip 1.0 swings 0.1deg, 0.6 swings 1.2deg, 0.2 swings 6.5deg,
-// 0.07 swings ~16deg and oscillates. Nearly all the feel lives below 0.5, so a
-// linear slider would be dead over its first half. Yaw damping was measured too
-// and does nothing here — the tyres do the damping, so the axle is the only knob.
-const GRIP_MAX = 0.95;
-const GRIP_MIN = 0.07;
-export const gripForLooseness = (loose) =>
-  GRIP_MAX * (GRIP_MIN / GRIP_MAX) ** Math.min(1, Math.max(0, loose));
+// Trailer tyres, as a slip-angle model.
+//
+// Two earlier models failed, and both failed for the same reason. A force
+// proportional to lateral VELOCITY is a damper, and a damper can only remove
+// energy, so it overshot by 0.0deg at every setting. Capping that damper did not
+// help either: it removed damping without adding any restoring force, so below
+// the cornering demand the trailer just slid wide for ever (steady angle 28-43deg,
+// never recovering) instead of swinging back.
+//
+// Real tyres make force proportional to SLIP ANGLE. For a trailing body that is a
+// spring proportional to yaw, which is the missing ingredient — a spring plus
+// light damping is what overshoots and rings down. It also fixes a speed bug:
+// the old damper's strength scaled with velocity, so it went rock solid at
+// 13 m/s no matter what the slider said.
+//
+// Looseness lowers cornering stiffness: softer tyres, a slacker spring, more swing.
+// The floor is 18000, not lower: below about 15000 the trailer stops recovering
+// between corners and walks itself into a jackknife.
+const STIFF_MAX = 90000; // N per radian of slip: tracks tightly, no visible swing
+const STIFF_MIN = 18000; // N per radian: ~10deg of swing past the corner angle
+// Interpolated in compliance (1/stiffness), which spreads the slider evenly.
+// Geometric spacing bunched all the movement into the top quarter.
+export const stiffnessForLooseness = (loose) => {
+  const t = Math.min(1, Math.max(0, loose));
+  return 1 / (1 / STIFF_MAX + t * (1 / STIFF_MIN - 1 / STIFF_MAX));
+};
+
+// Friction limit of the tyres, a bit above the cornering demand so the trailer
+// holds a clean corner but lets go when shoved or hit.
+const GRIP_CAP = 10000; // N
 
 const rot = (a, x, y) => ({ x: x * Math.cos(a) - y * Math.sin(a), y: x * Math.sin(a) + y * Math.cos(a) });
 
@@ -109,7 +130,7 @@ export class Rig {
     this.truck.setNextKinematicTranslation({ x: p.x, y: p.y });
     this.truck.setNextKinematicRotation(p.angle);
 
-    this.applyTrailerGrip();
+    this.applyTrailerGrip(dt);
   }
 
   /**
@@ -117,7 +138,7 @@ export class Rig {
    * applied AT the axle, so it produces the yaw torque that makes it fishtail.
    * Hitch looseness is how little of that lateral velocity gets cancelled.
    */
-  applyTrailerGrip() {
+  applyTrailerGrip(dt) {
     const b = this.trailer;
     const a = b.rotation();
     const axle = rot(a, TRAILER.axleX, 0);
@@ -130,16 +151,25 @@ export class Rig {
     const vx = v.x - w * axle.y;
     const vy = v.y + w * axle.x;
 
+    const fx = Math.cos(a); // body "forward" axis
+    const fy = Math.sin(a);
     const rx = -Math.sin(a); // body "right" axis
     const ry = Math.cos(a);
-    const lateral = vx * rx + vy * ry;
 
-    if (!Number.isFinite(lateral)) return;
+    const vFwd = vx * fx + vy * fy;
+    const vLat = vx * rx + vy * ry;
+    if (!Number.isFinite(vLat) || !Number.isFinite(vFwd)) return;
 
-    // grip 1 cancels the axle's sideways slip exactly; low values let it swing.
-    // gripOverride is for the headless harnesses only; the game never sets it.
-    const grip = this.gripOverride ?? gripForLooseness(cfg.hitchLoose);
-    const j = -lateral * TRAILER.lateralEffMass * grip;
+    // Slip angle. The floor on forward speed keeps this finite at a standstill.
+    const slip = Math.atan2(vLat, Math.max(Math.abs(vFwd), 1));
+
+    // stiffnessOverride / capOverride are for the headless harnesses only.
+    const stiffness = this.stiffnessOverride ?? stiffnessForLooseness(cfg.hitchLoose);
+    const cap = this.capOverride ?? GRIP_CAP;
+
+    let force = -stiffness * slip;
+    if (Math.abs(force) > cap) force = Math.sign(force) * cap;
+    const j = force * dt;
 
     b.applyImpulseAtPoint({ x: rx * j, y: ry * j }, { x: px, y: py }, true);
   }
