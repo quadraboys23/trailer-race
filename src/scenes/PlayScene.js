@@ -54,7 +54,11 @@ export default class PlayScene extends Phaser.Scene {
     // Overview is the button top-right or the Z key. Deliberately NOT a tap on
     // the play area: that becomes the steering input in M3.
     this.overviewBtn = document.getElementById('overview');
-    this.overviewBtn?.addEventListener('click', () => this.toggleOverview());
+    this.overviewBtn?.addEventListener('click', () => {
+      this.toggleOverview();
+      // Drop focus, or the next Space (the brake, from M3) would click it again.
+      this.overviewBtn.blur();
+    });
     this.input.keyboard?.on('keydown-Z', () => this.toggleOverview());
 
     this.applyCamera();

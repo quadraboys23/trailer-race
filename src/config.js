@@ -31,6 +31,29 @@ export const MODEL = {
   hitchDamp: 30000, // N*m per rad/s of trailer yaw rate relative to the truck
   trailerLinearDamping: 0.15, // Rapier damping, 1/s
   trailerAngularDamping: 0.05, // Rapier damping, 1/s
+  // Below this forward speed the slip angle uses this instead, so the tyre
+  // force stays finite when the trailer is (nearly) stopped.
+  trailerSlipSpeedFloor: 1, // m/s
+
+  // Geometry and contact. Metres, local +x is forward.
+  truck: {
+    len: 5.6,
+    wid: 2.3,
+    hitchX: -2.9, // hitch ball, behind the truck's centre
+    friction: 0.4, // Rapier contact friction against the car
+    restitution: 0.1, // bounciness when the car hits it
+  },
+  trailer: {
+    deckLen: 7.0, // deck runs local x in [-3.5, +3.5]
+    deckWid: 2.6,
+    drawbarX: 4.6, // hitch anchor, ahead of the deck
+    axleX: -1.2, // where lateral grip is applied; behind centre, as on a real trailer
+    headboardX: 3.4, // solid bulkhead at the front of the deck
+    headboardHalf: 0.16,
+    headboardFriction: 0.5, // contact friction when the car hits the headboard
+    headboardRestitution: 0.2, // bounce off the headboard on an overshoot
+    mass: 1200, // kg; with the deck size, sets inertia and the swing's frequency
+  },
 };
 
 /** Live values. Mutated by the debug panel; read every physics step. */

@@ -2,30 +2,16 @@ import { RAPIER } from './physics.js';
 import { cfg, MODEL } from './config.js';
 import { sampleLine, PERIMETER } from './track.js';
 
-// Truck + flatbed trailer. All dimensions in metres; local +x is forward.
+// Truck + flatbed trailer. Geometry and contact values live in MODEL
+// (src/config.js); these add the derived values.
 
-export const TRUCK = { len: 5.6, wid: 2.3, hitchX: -2.9 };
-
-export const TRAILER = {
-  deckLen: 7.0, // deck runs local x in [-3.5, +3.5]
-  deckWid: 2.6,
-  drawbarX: 4.6, // hitch anchor, ahead of the deck
-  axleX: -1.2, // where lateral grip is applied; behind centre, as on a real trailer
-  headboardX: 3.4, // solid bulkhead at the front of the deck
-  headboardHalf: 0.16,
-  mass: 1200,
-};
+export const TRUCK = { ...MODEL.truck };
+export const TRAILER = { ...MODEL.trailer };
 
 TRAILER.deckHalfLen = TRAILER.deckLen / 2;
 TRAILER.deckHalfWid = TRAILER.deckWid / 2;
 // Box inertia about the centre: m * (w^2 + h^2) / 12
 TRAILER.inertia = (TRAILER.mass * (TRAILER.deckLen ** 2 + TRAILER.deckWid ** 2)) / 12;
-
-// Effective mass seen by a sideways impulse applied AT THE AXLE rather than at
-// the centre of mass. Part of such an impulse becomes spin, so the body resists
-// it less than its full mass would suggest. Using TRAILER.mass here instead
-// over-corrects by ~30%, which oscillates and then blows the solver up.
-TRAILER.lateralEffMass = 1 / (1 / TRAILER.mass + TRAILER.axleX ** 2 / TRAILER.inertia);
 
 // Trailer tyres, as a slip-angle model.
 //
@@ -82,7 +68,7 @@ export class Rig {
         .setRotation(start.angle)
     );
     world.createCollider(
-      RAPIER.ColliderDesc.cuboid(TRUCK.len / 2, TRUCK.wid / 2).setFriction(0.4).setRestitution(0.1),
+      RAPIER.ColliderDesc.cuboid(TRUCK.len / 2, TRUCK.wid / 2).setFriction(TRUCK.friction).setRestitution(TRUCK.restitution),
       this.truck
     );
 
@@ -116,8 +102,8 @@ export class Rig {
       RAPIER.ColliderDesc.cuboid(TRAILER.headboardHalf, TRAILER.deckHalfWid)
         .setTranslation(TRAILER.headboardX, 0)
         .setDensity(0)
-        .setFriction(0.5)
-        .setRestitution(0.2),
+        .setFriction(TRAILER.headboardFriction)
+        .setRestitution(TRAILER.headboardRestitution),
       this.trailer
     );
 
@@ -176,7 +162,7 @@ export class Rig {
     if (!Number.isFinite(vLat) || !Number.isFinite(vFwd)) return;
 
     // Slip angle. The floor on forward speed keeps this finite at a standstill.
-    const slip = Math.atan2(vLat, Math.max(Math.abs(vFwd), 1));
+    const slip = Math.atan2(vLat, Math.max(Math.abs(vFwd), MODEL.trailerSlipSpeedFloor));
 
     // stiffnessOverride / capOverride are for the headless harnesses only.
     const stiffness = this.stiffnessOverride ?? stiffnessForLooseness(cfg.hitchLoose);
