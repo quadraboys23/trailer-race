@@ -237,7 +237,7 @@ Added by Walker on 2026-09-25. Milestones run autonomously between checkpoints.
 - [x] **M2** Oval track drawn. Kinematic truck follows the racing line at
       constant speed, trailer on a revolute hitch and fishtails. Solid tailgate,
       sensor deck.
-- [ ] **M3** Player car: top-down lateral-friction physics, drag-to-steer,
+- [x] **M3** Player car: top-down lateral-friction physics, drag-to-steer,
       auto-throttle, two-finger brake, distance-throttle toggle. Camera follows.
 - [ ] **M4** On-deck state: rear-edge mounting, deck-relative capped grip,
       overhang and misalignment penalties, fall-off impulse and control loss,
