@@ -22,6 +22,13 @@ export function relativeFinger(car, { bearing, dist, id = 0 }) {
 // A second finger, well away from the steering thumb: the brake.
 export const BRAKE_FINGER = { id: 1, x: 300, y: 760 };
 
+/** How far the steering thumb (as the game read it) is ahead of the car, m. */
+export function thumbAhead(s) {
+  const t = s.car.steerTarget;
+  if (!t) return 0;
+  return (t.x - s.car.x) * Math.cos(s.car.angle) + (t.y - s.car.y) * Math.sin(s.car.angle);
+}
+
 export const deg = (r) => (r * 180) / Math.PI;
 export const r2 = (v, d = 2) => +v.toFixed(d);
 export { PERIMETER };

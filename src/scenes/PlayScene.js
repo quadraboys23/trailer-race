@@ -35,8 +35,10 @@ export default class PlayScene extends Phaser.Scene {
     this.carLastS = project(this.car.pose().x, this.car.pose().y).s;
     this.contactFrames = 0; // physics steps the car spent touching the truck or headboard
     this.simTime = 0; // seconds of physics stepped since the scene started
-    if (window.__trailer) window.__trailer.scene = this;
-    else window.__trailer = { scene: this };
+    window.__trailer = { ...window.__trailer, scene: this };
+    // Harness/debug hooks, called by capture scenarios as { call: 'parkCar' } etc.
+    window.__trailer.parkCar = () => this.car.park();
+    window.__trailer.placeCar = (opts) => this.car.place(opts);
 
     this.drawTrack();
 

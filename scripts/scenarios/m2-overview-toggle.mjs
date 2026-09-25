@@ -16,6 +16,7 @@ export default {
   duration: 3.5,
   frames: EXPECT.map(([t]) => t),
   input: [
+    { t: 0, call: 'parkCar' },
     { t: 0.5, touch: [CENTRE] },
     { t: 0.6, touch: [] },
     { t: 1.0, click: '#overview' },

@@ -44,6 +44,7 @@ export class Car {
    *   brake: second finger / space
    */
   step(dt, ctl) {
+    if (this.parked) return;
     const b = this.body;
     const a = b.rotation();
     const fx = Math.cos(a);
@@ -98,6 +99,26 @@ export class Car {
       w = ctl.steerAxis * cfg.steerRate;
     }
     b.setAngvel(w * steerScale, true);
+  }
+
+  /** Debug/harness: put the car somewhere, at a speed along its heading. */
+  place({ x, y, angle, speed = 0 }) {
+    const b = this.body;
+    b.setBodyType(RAPIER.RigidBodyType.Dynamic, true);
+    b.setTranslation({ x, y }, true);
+    b.setRotation(angle, true);
+    b.setLinvel({ x: Math.cos(angle) * speed, y: Math.sin(angle) * speed }, true);
+    b.setAngvel(0, true);
+    this.parked = false;
+  }
+
+  /** Debug/harness: take the car out of play (fixed, in the infield), for rig-only captures. */
+  park() {
+    const b = this.body;
+    b.setBodyType(RAPIER.RigidBodyType.Fixed, true);
+    b.setTranslation({ x: 0, y: 0 }, true);
+    b.setLinvel({ x: 0, y: 0 }, true);
+    this.parked = true;
   }
 
   pose() {

@@ -12,7 +12,8 @@ export function hitchScenario({ name, hitchLoose, camera = 'overview' }) {
     params: hitchLoose === undefined ? {} : { hitchLoose },
     duration: 12,
     frames: { every: 0.5, from: 4, to: 12 },
-    input: camera === 'overview' ? [{ t: 0, click: '#overview' }] : [],
+    // The car is parked in the infield: these captures are about the rig alone.
+    input: [{ t: 0, call: 'parkCar' }, ...(camera === 'overview' ? [{ t: 0, click: '#overview' }] : [])],
     label: (s) => `${s.segment} yaw ${s.hitchYawDeg.toFixed(1)}°`,
     analyse: analyseCornerEntry,
   };

@@ -7,7 +7,7 @@
   "width": 390,
   "height": 844
  },
- "capturedAt": "2026-09-25T22:17:52.664Z",
+ "capturedAt": "2026-09-25T22:32:43.587Z",
  "consoleErrors": [],
  "config": {
   "topSpeed": 22,
@@ -102,7 +102,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": -48.339,
+    "y": 21.158,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0.233,
+    "vx": 0.176,
+    "vy": 0.153,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0,
+    "trackOffset": 0,
+    "onAsphalt": true,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.033,
@@ -120,7 +139,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.05,
@@ -138,7 +176,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.067,
@@ -156,7 +213,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.083,
@@ -174,7 +250,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.1,
@@ -192,7 +287,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.117,
@@ -210,7 +324,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.133,
@@ -228,7 +361,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.15,
@@ -246,7 +398,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.167,
@@ -264,7 +435,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.183,
@@ -282,7 +472,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.2,
@@ -300,7 +509,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.217,
@@ -318,7 +546,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.233,
@@ -336,7 +583,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.25,
@@ -354,7 +620,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.267,
@@ -372,7 +657,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.283,
@@ -390,7 +694,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.3,
@@ -408,7 +731,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.317,
@@ -426,7 +768,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.333,
@@ -444,7 +805,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.35,
@@ -462,7 +842,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.367,
@@ -480,7 +879,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.383,
@@ -498,7 +916,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.4,
@@ -516,7 +953,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.417,
@@ -534,7 +990,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.433,
@@ -552,7 +1027,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.45,
@@ -570,7 +1064,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.467,
@@ -588,7 +1101,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.483,
@@ -606,7 +1138,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.5,
@@ -624,7 +1175,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.517,
@@ -642,7 +1212,29 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": {
+     "x": 0.005,
+     "y": 5.974
+    },
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.533,
@@ -660,7 +1252,29 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": {
+     "x": 0.005,
+     "y": 5.974
+    },
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.55,
@@ -678,7 +1292,29 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": {
+     "x": 0.005,
+     "y": 5.974
+    },
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.567,
@@ -696,7 +1332,29 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": {
+     "x": 0.005,
+     "y": 5.974
+    },
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.583,
@@ -714,7 +1372,29 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": {
+     "x": 0.005,
+     "y": 5.974
+    },
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.6,
@@ -732,7 +1412,29 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": {
+     "x": 0.005,
+     "y": 5.974
+    },
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.617,
@@ -750,7 +1452,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.633,
@@ -768,7 +1489,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.65,
@@ -786,7 +1526,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.667,
@@ -804,7 +1563,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.683,
@@ -822,7 +1600,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.7,
@@ -840,7 +1637,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.717,
@@ -858,7 +1674,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.733,
@@ -876,7 +1711,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.75,
@@ -894,7 +1748,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.767,
@@ -912,7 +1785,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.783,
@@ -930,7 +1822,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.8,
@@ -948,7 +1859,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.817,
@@ -966,7 +1896,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.833,
@@ -984,7 +1933,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.85,
@@ -1002,7 +1970,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.867,
@@ -1020,7 +2007,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.883,
@@ -1038,7 +2044,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.9,
@@ -1056,7 +2081,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.917,
@@ -1074,7 +2118,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.933,
@@ -1092,7 +2155,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.95,
@@ -1110,7 +2192,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.967,
@@ -1128,7 +2229,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 0.983,
@@ -1146,7 +2266,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1,
@@ -1164,7 +2303,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.017,
@@ -1182,7 +2340,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.033,
@@ -1200,7 +2377,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.05,
@@ -1218,7 +2414,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.067,
@@ -1236,7 +2451,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.083,
@@ -1254,7 +2488,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.1,
@@ -1272,7 +2525,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.117,
@@ -1290,7 +2562,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.133,
@@ -1308,7 +2599,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.15,
@@ -1326,7 +2636,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.167,
@@ -1344,7 +2673,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.183,
@@ -1362,7 +2710,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.2,
@@ -1380,7 +2747,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.217,
@@ -1398,7 +2784,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.233,
@@ -1416,7 +2821,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.25,
@@ -1434,7 +2858,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.267,
@@ -1452,7 +2895,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.283,
@@ -1470,7 +2932,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.3,
@@ -1488,7 +2969,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.317,
@@ -1506,7 +3006,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.333,
@@ -1524,7 +3043,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.35,
@@ -1542,7 +3080,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.367,
@@ -1560,7 +3117,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.383,
@@ -1578,7 +3154,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.4,
@@ -1596,7 +3191,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.417,
@@ -1614,7 +3228,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.433,
@@ -1632,7 +3265,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.45,
@@ -1650,7 +3302,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.467,
@@ -1668,7 +3339,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.483,
@@ -1686,7 +3376,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.5,
@@ -1704,7 +3413,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.517,
@@ -1722,7 +3450,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.533,
@@ -1740,7 +3487,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.55,
@@ -1758,7 +3524,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.567,
@@ -1776,7 +3561,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.583,
@@ -1794,7 +3598,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.6,
@@ -1812,7 +3635,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.617,
@@ -1830,7 +3672,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.633,
@@ -1848,7 +3709,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.65,
@@ -1866,7 +3746,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.667,
@@ -1884,7 +3783,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.683,
@@ -1902,7 +3820,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.7,
@@ -1920,7 +3857,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.717,
@@ -1938,7 +3894,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.733,
@@ -1956,7 +3931,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.75,
@@ -1974,7 +3968,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.767,
@@ -1992,7 +4005,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.783,
@@ -2010,7 +4042,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.8,
@@ -2028,7 +4079,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.817,
@@ -2046,7 +4116,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.833,
@@ -2064,7 +4153,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.85,
@@ -2082,7 +4190,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.867,
@@ -2100,7 +4227,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.883,
@@ -2118,7 +4264,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.9,
@@ -2136,7 +4301,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.917,
@@ -2154,7 +4338,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.933,
@@ -2172,7 +4375,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.95,
@@ -2190,7 +4412,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.967,
@@ -2208,7 +4449,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 1.983,
@@ -2226,7 +4486,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2,
@@ -2244,7 +4523,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.017,
@@ -2262,7 +4560,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.033,
@@ -2280,7 +4597,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.05,
@@ -2298,7 +4634,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.067,
@@ -2316,7 +4671,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.083,
@@ -2334,7 +4708,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.1,
@@ -2352,7 +4745,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.117,
@@ -2370,7 +4782,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.133,
@@ -2388,7 +4819,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.15,
@@ -2406,7 +4856,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.167,
@@ -2424,7 +4893,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.183,
@@ -2442,7 +4930,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.2,
@@ -2460,7 +4967,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.217,
@@ -2478,7 +5004,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.233,
@@ -2496,7 +5041,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.25,
@@ -2514,7 +5078,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.267,
@@ -2532,7 +5115,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.283,
@@ -2550,7 +5152,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.3,
@@ -2568,7 +5189,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.317,
@@ -2586,7 +5226,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.333,
@@ -2604,7 +5263,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.35,
@@ -2622,7 +5300,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.367,
@@ -2640,7 +5337,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.383,
@@ -2658,7 +5374,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.4,
@@ -2676,7 +5411,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.417,
@@ -2694,7 +5448,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.433,
@@ -2712,7 +5485,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.45,
@@ -2730,7 +5522,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.467,
@@ -2748,7 +5559,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.483,
@@ -2766,7 +5596,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.5,
@@ -2784,7 +5633,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.517,
@@ -2802,7 +5670,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.533,
@@ -2820,7 +5707,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.55,
@@ -2838,7 +5744,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.567,
@@ -2856,7 +5781,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.583,
@@ -2874,7 +5818,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.6,
@@ -2892,7 +5855,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.617,
@@ -2910,7 +5892,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.633,
@@ -2928,7 +5929,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.65,
@@ -2946,7 +5966,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.667,
@@ -2964,7 +6003,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.683,
@@ -2982,7 +6040,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.7,
@@ -3000,7 +6077,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.717,
@@ -3018,7 +6114,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.733,
@@ -3036,7 +6151,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.75,
@@ -3054,7 +6188,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.767,
@@ -3072,7 +6225,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.783,
@@ -3090,7 +6262,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.8,
@@ -3108,7 +6299,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.817,
@@ -3126,7 +6336,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.833,
@@ -3144,7 +6373,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.85,
@@ -3162,7 +6410,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.867,
@@ -3180,7 +6447,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.883,
@@ -3198,7 +6484,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.9,
@@ -3216,7 +6521,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.917,
@@ -3234,7 +6558,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.933,
@@ -3252,7 +6595,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.95,
@@ -3270,7 +6632,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.967,
@@ -3288,7 +6669,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 2.983,
@@ -3306,7 +6706,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3,
@@ -3324,7 +6743,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.017,
@@ -3342,7 +6780,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.033,
@@ -3360,7 +6817,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.05,
@@ -3378,7 +6854,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.067,
@@ -3396,7 +6891,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.083,
@@ -3414,7 +6928,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.1,
@@ -3432,7 +6965,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.117,
@@ -3450,7 +7002,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.133,
@@ -3468,7 +7039,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.15,
@@ -3486,7 +7076,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.167,
@@ -3504,7 +7113,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.183,
@@ -3522,7 +7150,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.2,
@@ -3540,7 +7187,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.217,
@@ -3558,7 +7224,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.233,
@@ -3576,7 +7261,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.25,
@@ -3594,7 +7298,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.267,
@@ -3612,7 +7335,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.283,
@@ -3630,7 +7372,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.3,
@@ -3648,7 +7409,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.317,
@@ -3666,7 +7446,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.333,
@@ -3684,7 +7483,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.35,
@@ -3702,7 +7520,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.367,
@@ -3720,7 +7557,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.383,
@@ -3738,7 +7594,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.4,
@@ -3756,7 +7631,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.417,
@@ -3774,7 +7668,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.433,
@@ -3792,7 +7705,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.45,
@@ -3810,7 +7742,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.467,
@@ -3828,7 +7779,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.483,
@@ -3846,7 +7816,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   },
   {
    "t": 3.5,
@@ -3864,7 +7853,26 @@
     "angle": 0
    },
    "hitchYawDeg": 0,
-   "peakYawDeg": 0
+   "peakYawDeg": 0,
+   "car": {
+    "x": 0,
+    "y": 0,
+    "angle": 0.714,
+    "angvel": 0,
+    "speed": 0,
+    "vx": 0,
+    "vy": 0,
+    "targetSpeed": 22,
+    "braking": false,
+    "sliding": false,
+    "laps": 0.169,
+    "trackOffset": -28,
+    "onAsphalt": false,
+    "contactFrames": 0,
+    "steerTarget": null,
+    "steerAxis": 0,
+    "distanceThrottle": false
+   }
   }
  ]
 }

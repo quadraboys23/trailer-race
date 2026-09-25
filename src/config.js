@@ -70,7 +70,9 @@ export const MODEL = {
     brakeToAccel: 2, // braking decel = this x the Acceleration slider
     fullSteerSpeed: 3, // m/s; below this the turn rate scales down, so it can't spin in place
     // Distance throttle: a thumb this far ahead of the car (m) asks for top speed.
-    distanceThrottleRange: 25,
+    // Must be reachable on screen: the view is 30 m wide, so with the car
+    // centred a thumb can only get ~15 m ahead on a horizontal straight.
+    distanceThrottleRange: 12,
     startBehind: 20, // m of racing line behind the truck's start point
   },
 };
