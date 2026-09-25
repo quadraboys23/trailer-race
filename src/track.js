@@ -60,6 +60,16 @@ export function sampleLine(s) {
   };
 }
 
+/** Which of the four pieces arc length `s` falls on. */
+export function segmentAt(s) {
+  let d = ((s % PERIMETER) + PERIMETER) % PERIMETER;
+  for (const [name, len] of Object.entries(SEG)) {
+    if (d < len) return name;
+    d -= len;
+  }
+  return 'leftArc';
+}
+
 /** Outer bound of the drawn asphalt, for framing the overview camera. */
 export const TRACK_BOUNDS = {
   halfW: L / 2 + R + TRACK.width / 2,

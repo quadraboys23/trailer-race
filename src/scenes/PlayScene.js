@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
 import { Physics, PX_PER_M, mToPx } from '../physics.js';
 import { cfg } from '../config.js';
-import { TRACK, TRACK_BOUNDS, PERIMETER, sampleLine } from '../track.js';
+import { TRACK, TRACK_BOUNDS, PERIMETER, sampleLine, segmentAt } from '../track.js';
 import { Rig, TRUCK, TRAILER, stiffnessForLooseness } from '../rig.js';
 
 const VIEW_W = 540;
@@ -28,6 +28,7 @@ export default class PlayScene extends Phaser.Scene {
   create() {
     this.physics2 = new Physics();
     this.rig = new Rig(this.physics2.world);
+    this.simTime = 0; // seconds of physics stepped since the scene started
     if (window.__trailer) window.__trailer.scene = this;
     else window.__trailer = { scene: this };
 
@@ -43,6 +44,12 @@ export default class PlayScene extends Phaser.Scene {
       .text(12, 12, '', { fontFamily: 'monospace', fontSize: '18px', color: '#c8d0da' })
       .setScrollFactor(0)
       .setDepth(100);
+
+    // The HUD gets its own unzoomed camera; otherwise the overview zoom shrinks
+    // it to an unreadable smudge. Each camera ignores the other's objects.
+    this.uiCam = this.cameras.add(0, 0, VIEW_W, VIEW_H).setName('ui');
+    this.uiCam.ignore(this.children.list.filter((o) => o !== this.hud));
+    this.cameras.main.ignore(this.hud);
 
     // Overview is the button top-right or the Z key. Deliberately NOT a tap on
     // the play area: that becomes the steering input in M3.
@@ -102,7 +109,10 @@ export default class PlayScene extends Phaser.Scene {
   }
 
   update(_time, delta) {
-    this.physics2.step(delta, (dt) => this.rig.step(dt));
+    this.physics2.step(delta, (dt) => {
+      this.rig.step(dt);
+      this.simTime += dt;
+    });
     this.drawRig();
 
     const cam = this.cameras.main;
@@ -126,6 +136,23 @@ export default class PlayScene extends Phaser.Scene {
         `lap           ${(this.rig.s / PERIMETER).toFixed(2)}`,
       ].join('\n')
     );
+  }
+
+  /** Plain-number snapshot of everything the HUD shows, for `npm run capture`. */
+  getState() {
+    const tr = this.rig.truck.translation();
+    const tp = this.rig.pose();
+    const yaw = Phaser.Math.Angle.Wrap(tp.angle - this.rig.truck.rotation());
+    return {
+      t: +this.simTime.toFixed(4),
+      overview: this.overview,
+      lap: this.rig.s / PERIMETER,
+      segment: segmentAt(this.rig.s),
+      truck: { x: tr.x, y: tr.y, angle: this.rig.truck.rotation() },
+      trailer: { x: tp.x, y: tp.y, angle: tp.angle },
+      hitchYawDeg: Phaser.Math.RadToDeg(yaw),
+      peakYawDeg: this.peakYaw,
+    };
   }
 
   drawRig() {

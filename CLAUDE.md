@@ -37,7 +37,9 @@ Do not build these, even with spare time in a session:
 - Monetization, analytics, app-store builds, service workers, PWA manifests.
 - Performance work beyond "runs smoothly on Walker's phone".
 - Tests, CI, linters, TypeScript, state-management libraries, build tooling
-  beyond the Vite dev server.
+  beyond the Vite dev server. **Two exceptions**, added by Walker on 2026-09-25:
+  the Playwright capture harness (`npm run capture`) and the GitHub Pages deploy
+  workflow. Neither grows into a test suite or a CI pipeline.
 
 Adding a dependency is a scope change. Ask first.
 
@@ -48,6 +50,7 @@ Adding a dependency is a scope change. Ask first.
 | Phaser | 3.90.0 | Rendering, input, camera, game loop. Phaser 3, not 4. |
 | @dimforge/rapier2d-compat | 0.20.0 | Physics. `-compat` build: WASM is inlined, no Vite WASM config. |
 | Vite | 7.3.6 | Dev server and build. No plugins. |
+| playwright | 1.63.0 | Dev only. Drives `npm run capture`. Chromium via `npx playwright install chromium`. |
 | Language | plain JavaScript, ES modules | No TypeScript, no JSX, no config beyond defaults. |
 
 Versions are confirmed with `npm view <pkg>@<version> version` before they go
@@ -118,8 +121,15 @@ removes damping without adding a restoring force, so the trailer slides wide for
 ever instead of swinging back. Slip angle gives a spring proportional to yaw,
 which is what actually rings down.
 
-Measured at 13 m/s: looseness 0 gives 0.0deg of swing past the steady corner
-angle, 0.4 gives 4.1deg, 1.0 gives 11.9deg and settles in 1.7s.
+On top of the tyres, a hitch damper resists the trailer's yaw rate *relative to
+the truck*. Without it the swing rang on as a slow counter-swing (2.6s to settle
+at looseness 1). Do not use Rapier's angular damping instead: it damps absolute
+spin, so it fights the corner and shifts the steady angle.
+
+Measured at 13 m/s (captures/m2, definitions in docs/acceptance.md): looseness 0
+gives 0.0deg of swing past the steady corner angle, 0.4 gives 3.0deg, the 0.45
+default 3.7deg, 1.0 gives
+11.3deg and settles within 1deg 1.4s after the peak. Bounded (<24deg) at 17 m/s.
 
 ## Units and conventions
 
@@ -129,6 +139,10 @@ angle, 0.4 gives 4.1deg, 1.0 gives 11.9deg and settles in 1.7s.
   frame delta.
 - Every tunable lives in one config object with a slider, not inline in the
   physics code. A magic number in a force calculation is a missing slider.
+  Exception (Walker, 2026-09-25): fixed **model constants** — how the physics
+  works rather than what a play-tester would tune — go in the `MODEL` block of
+  `src/config.js`, named and explained, with no slider. Adding a slider stays a
+  brief change.
 
 ## Tuning sliders
 
@@ -174,11 +188,47 @@ npm run dev -- --host
 Vite prints a `Network:` URL (e.g. `http://192.168.x.x:5180`). Open it on the
 phone. **Re-read that line every session** — this machine's LAN IP has already
 changed once mid-project, which silently breaks a phone URL from a previous day.
-Nothing is deployed; there is no hosting step in Phase 1.
 
 ```sh
-npm run build        # dist/, only needed when we put it on itch.io
+npm run build        # dist/
 ```
+
+Deploy: `.github/workflows/deploy.yml` builds with `--base=/trailer-race/` and
+publishes to GitHub Pages on every push to main. **Not live yet** — the repo is
+private, and Pages on a private repo needs a paid plan or making the repo
+public. Walker decides; see the autonomy rules.
+
+## Captures
+
+```sh
+npx playwright install chromium   # once per machine
+npm run capture                   # every scenario
+npm run capture -- m2             # scenarios whose file name starts with "m2"
+npm run capture -- m2 hitchLoose=0.7   # extra URL params for every scenario
+```
+
+Scenarios are `scripts/scenarios/<milestone>-<name>.mjs` (files starting with
+`_` are shared helpers). Each runs the real game headless at 390x844 portrait in
+capture mode (`?capture=1`): Phaser's loop is asleep and the harness steps it one
+fixed frame at a time, so the same script gives the same capture every run.
+Input is scripted as synthetic touches, keys, clicks and calls into
+`window.__trailer`. Output is `captures/<milestone>/<name>.png` (contact sheet)
+and `.json` (summary metrics, config, console errors, state every frame).
+Captures are committed.
+
+## Autonomy rules
+
+Added by Walker on 2026-09-25. Milestones run autonomously between checkpoints.
+
+- A milestone is done when the **reviewer** subagent (`.claude/agents/reviewer.md`)
+  returns PASS against `docs/acceptance.md`, using fresh captures. Nothing is
+  handed to Walker without a reviewer PASS.
+- Iterate on a failing milestone up to **5 reviewer attempts**. On the 5th FAIL,
+  stop and report what was tried.
+- **Stop and ask Walker** for: any change to the brief or scope, any judgement
+  about feel, anything needing a purchase or an account.
+- **Human checkpoints:** end of M3 (driving feel), end of M4, end of M5 (the
+  20-minute pass/fail test). Between them, carry on to the next milestone.
 
 ## Phase 1 milestones
 
