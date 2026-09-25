@@ -21,10 +21,16 @@
 //   frames      [seconds...] when to screenshot, or { every: seconds, from?, to? }
 //   input       [{ t, ...action }] actions, applied at the first frame >= t:
 //                 { touch: [{ id, x, y }] }   the full set of fingers now down,
-//                                             CSS px; [] lifts them all
+//                                             CSS px; [] lifts them all. A finger
+//                                             given as { id, wx, wy } is in world
+//                                             metres, converted through the camera.
 //                 { keyDown: 'ArrowLeft' } / { keyUp: 'ArrowLeft' } / { press: 'z' }
 //                 { click: '#overview' }       DOM click on a selector
 //                 { call: 'name', args: [] }   window.__trailer.<name>(...args)
+//   drive(state) optional closed-loop driver, called every `driveEvery` frames
+//               (default 2) with the latest state; returns an action or a list
+//               of actions (same shapes as `input`, without `t`), or nothing.
+//               This is how a scripted player steers a camera-following car.
 //   label(state) optional, extra text under each frame from its state
 //   analyse(trace, config)  optional, returns the summary object
 
@@ -113,13 +119,19 @@ async function runScenario(scen) {
   const trace = [first];
   const shots = [];
   let frame = Math.round(first.t * FPS);
+  const driveEvery = scen.driveEvery ?? 2;
   while (frame < totalFrames) {
     // Apply every action due at this frame.
     while (actions.length && Math.round(actions[0].t * FPS) <= frame) {
       await applyAction(page, cdp, actions.shift(), touchesDown);
     }
-    // Advance to the next action, screenshot, or the end — whichever is first.
+    if (scen.drive) {
+      const out = scen.drive(trace[trace.length - 1]);
+      for (const a of [out ?? []].flat()) await applyAction(page, cdp, a, touchesDown);
+    }
+    // Advance to the next action, screenshot, drive tick, or the end — whichever is first.
     let next = totalFrames;
+    if (scen.drive) next = Math.min(next, frame + driveEvery);
     if (actions.length) next = Math.min(next, Math.max(frame + 1, Math.round(actions[0].t * FPS)));
     for (const f of shotFrames) if (f > frame && f < next) next = f;
     const states = await page.evaluate((n) => window.__trailer.advance(n), next - frame);
@@ -170,16 +182,32 @@ async function runScenario(scen) {
 
 async function applyAction(page, cdp, a, touchesDown) {
   if (a.touch) {
-    const next = new Map(a.touch.map((p, i) => [p.id ?? i, p]));
+    const fingers = [];
+    for (const p of a.touch) {
+      if (p.wx === undefined) fingers.push(p);
+      else {
+        const sp = await page.evaluate(([x, y]) => window.__trailer.scene.toScreen(x, y), [p.wx, p.wy]);
+        // A real finger can't leave the screen.
+        fingers.push({ id: p.id, x: Math.min(VIEW.width - 1, Math.max(1, sp.x)), y: Math.min(VIEW.height - 1, Math.max(1, sp.y)) });
+      }
+    }
+    const next = new Map(fingers.map((p, i) => [p.id ?? i, p]));
     const points = (m) => [...m.entries()].map(([id, p]) => ({ id, x: p.x, y: p.y }));
     const ended = [...touchesDown.keys()].filter((id) => !next.has(id));
     const started = [...next.keys()].filter((id) => !touchesDown.has(id));
     const moved = [...next.keys()].filter((id) => touchesDown.has(id));
     if (ended.length) {
+      // Chromium's CDP releases exactly the fingers a touchEnd lists (checked:
+      // a touchMove with fewer fingers releases nothing).
+      const lifted = new Map(ended.map((id) => [id, touchesDown.get(id)]));
       for (const id of ended) touchesDown.delete(id);
-      await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: points(touchesDown) });
+      await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: points(lifted) });
     }
-    if (moved.length) {
+    const changed = moved.filter((id) => {
+      const o = touchesDown.get(id), n = next.get(id);
+      return o.x !== n.x || o.y !== n.y;
+    });
+    if (changed.length) {
       for (const id of moved) touchesDown.set(id, next.get(id));
       await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: points(touchesDown) });
     }

@@ -3,9 +3,11 @@ import { initRapier, FIXED_DT } from './physics.js';
 import { cfg } from './config.js';
 import PlayScene from './scenes/PlayScene.js';
 
-// Portrait design resolution. Phaser FITs it to whatever the phone gives us.
+// Portrait. The width is fixed; the height follows the screen's aspect ratio so
+// the canvas fills the whole phone (no letterbox bars, which would swallow a
+// brake finger). Clamped so a desktop window doesn't go landscape.
 const WIDTH = 540;
-const HEIGHT = 960;
+const HEIGHT = Math.round(WIDTH * Math.max(1.5, Math.min(2.4, window.innerHeight / window.innerWidth)));
 
 async function boot() {
   await initRapier();

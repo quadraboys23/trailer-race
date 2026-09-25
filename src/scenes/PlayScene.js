@@ -1,11 +1,9 @@
 import Phaser from 'phaser';
 import { Physics, PX_PER_M, mToPx } from '../physics.js';
-import { cfg } from '../config.js';
-import { TRACK, TRACK_BOUNDS, PERIMETER, sampleLine, segmentAt } from '../track.js';
-import { Rig, TRUCK, TRAILER, stiffnessForLooseness } from '../rig.js';
-
-const VIEW_W = 540;
-const VIEW_H = 960;
+import { cfg, syncUrl } from '../config.js';
+import { TRACK, TRACK_BOUNDS, PERIMETER, sampleLine, segmentAt, project } from '../track.js';
+import { Rig, TRUCK, TRAILER } from '../rig.js';
+import { Car, CAR } from '../car.js';
 
 const COL = {
   asphalt: 0x3a3f47,
@@ -18,6 +16,10 @@ const COL = {
   ramp: 0xd8a441,
   headboard: 0xc25a3a,
   drawbar: 0x555b64,
+  car: 0xd8433a,
+  carGlass: 0x5a2420,
+  brakeLight: 0xff2a1a,
+  tailLight: 0x6a1f1a,
 };
 
 export default class PlayScene extends Phaser.Scene {
@@ -28,6 +30,10 @@ export default class PlayScene extends Phaser.Scene {
   create() {
     this.physics2 = new Physics();
     this.rig = new Rig(this.physics2.world);
+    this.car = new Car(this.physics2.world);
+    this.carProgress = 0; // metres along the racing line, unwrapped
+    this.carLastS = project(this.car.pose().x, this.car.pose().y).s;
+    this.contactFrames = 0; // physics steps the car spent touching the truck or headboard
     this.simTime = 0; // seconds of physics stepped since the scene started
     if (window.__trailer) window.__trailer.scene = this;
     else window.__trailer = { scene: this };
@@ -35,6 +41,7 @@ export default class PlayScene extends Phaser.Scene {
     this.drawTrack();
 
     this.rigGfx = this.add.graphics().setDepth(10);
+    this.carGfx = this.add.graphics().setDepth(20);
 
     this.overview = false;
     this.peakYaw = 0;
@@ -47,7 +54,7 @@ export default class PlayScene extends Phaser.Scene {
 
     // The HUD gets its own unzoomed camera; otherwise the overview zoom shrinks
     // it to an unreadable smudge. Each camera ignores the other's objects.
-    this.uiCam = this.cameras.add(0, 0, VIEW_W, VIEW_H).setName('ui');
+    this.uiCam = this.cameras.add(0, 0, this.scale.width, this.scale.height).setName('ui');
     this.uiCam.ignore(this.children.list.filter((o) => o !== this.hud));
     this.cameras.main.ignore(this.hud);
 
@@ -61,6 +68,8 @@ export default class PlayScene extends Phaser.Scene {
     });
     this.input.keyboard?.on('keydown-Z', () => this.toggleOverview());
 
+    this.setupControls();
+
     this.applyCamera();
   }
 
@@ -73,13 +82,75 @@ export default class PlayScene extends Phaser.Scene {
   applyCamera() {
     const cam = this.cameras.main;
     if (this.overview) {
-      const zx = VIEW_W / (mToPx(TRACK_BOUNDS.halfW) * 2 + 40);
-      const zy = VIEW_H / (mToPx(TRACK_BOUNDS.halfH) * 2 + 40);
+      const zx = this.scale.width / (mToPx(TRACK_BOUNDS.halfW) * 2 + 40);
+      const zy = this.scale.height / (mToPx(TRACK_BOUNDS.halfH) * 2 + 40);
       cam.setZoom(Math.min(zx, zy));
       cam.centerOn(0, 0);
     } else {
       cam.setZoom(1);
     }
+  }
+
+  /**
+   * Touch: the first finger down steers (drag-to-point); any other finger held
+   * anywhere brakes. Mouse drag steers too. Keyboard: arrows steer, space
+   * brakes, T toggles distance throttle (debug).
+   */
+  setupControls() {
+    this.input.addPointer(1); // two touch pointers: steer + brake
+    this.steerPointerId = null;
+    this.input.on('pointerdown', (p) => {
+      if (this.steerPointerId === null) this.steerPointerId = p.id;
+    });
+    const release = (p) => {
+      if (p.id === this.steerPointerId) this.steerPointerId = null;
+    };
+    this.input.on('pointerup', release);
+    this.input.on('pointerupoutside', release);
+
+    const kb = this.input.keyboard;
+    this.keys = kb?.addKeys({ left: 'LEFT', right: 'RIGHT', brake: 'SPACE' });
+    kb?.on('keydown-T', () => {
+      cfg.distanceThrottle = !cfg.distanceThrottle;
+      syncUrl();
+    });
+  }
+
+  /** Controls for this step, from whatever is held right now. */
+  readControls() {
+    const down = this.input.manager.pointers.filter((p) => p.isDown);
+    const steer = down.find((p) => p.id === this.steerPointerId);
+    let target = null;
+    if (steer) {
+      const w = this.cameras.main.getWorldPoint(steer.x, steer.y);
+      target = { x: w.x / PX_PER_M, y: w.y / PX_PER_M };
+    }
+    const k = this.keys;
+    const steerAxis = (k?.right.isDown ? 1 : 0) - (k?.left.isDown ? 1 : 0);
+    const brake = down.some((p) => p.id !== this.steerPointerId) || !!k?.brake.isDown;
+    this.controls = { target, steerAxis, brake };
+    return this.controls;
+  }
+
+  /** World metres -> CSS pixels in the page, for the capture harness's synthetic touches. */
+  toScreen(xm, ym) {
+    const cam = this.cameras.main;
+    const gx = (mToPx(xm) - cam.worldView.x) * cam.zoom + cam.x;
+    const gy = (mToPx(ym) - cam.worldView.y) * cam.zoom + cam.y;
+    const r = this.game.canvas.getBoundingClientRect();
+    return { x: r.left + (gx * r.width) / this.scale.width, y: r.top + (gy * r.height) / this.scale.height };
+  }
+
+  /** Solid bodies the car can hit. Deck is a sensor and doesn't count. */
+  carTouchingRig() {
+    const w = this.physics2.world;
+    let touching = false;
+    for (const other of [this.rig.truckCollider, this.rig.headboardCollider]) {
+      w.contactPair(this.car.collider, other, (manifold) => {
+        if (manifold.numContacts() > 0) touching = true;
+      });
+    }
+    return touching;
   }
 
   /** Asphalt is drawn once: outer polygon filled, then the infield punched back out. */
@@ -113,15 +184,18 @@ export default class PlayScene extends Phaser.Scene {
   }
 
   update(_time, delta) {
+    const ctl = this.readControls();
     this.physics2.step(delta, (dt) => {
       this.rig.step(dt);
+      this.car.step(dt, ctl);
       this.simTime += dt;
-    });
+    }, () => this.afterStep());
     this.drawRig();
+    this.drawCar();
 
     const cam = this.cameras.main;
-    const t = this.rig.truck.translation();
-    if (!this.overview) cam.centerOn(mToPx(t.x), mToPx(t.y));
+    const cp = this.car.pose();
+    if (!this.overview) cam.centerOn(mToPx(cp.x), mToPx(cp.y));
 
     const tp = this.rig.pose();
     const yaw = Phaser.Math.RadToDeg(
@@ -131,15 +205,25 @@ export default class PlayScene extends Phaser.Scene {
     this.peakYaw = Math.max(Math.abs(yaw), this.peakYaw * 0.995);
     this.hud.setText(
       [
-        `${Math.round(this.game.loop.actualFps)} fps`,
-        `trailer speed ${cfg.trailerSpeed.toFixed(1)} m/s`,
-        `hitch loose   ${cfg.hitchLoose.toFixed(2)}`,
-        `tyre stiff    ${Math.round(stiffnessForLooseness(cfg.hitchLoose))} N/rad`,
-        `hitch yaw     ${yaw.toFixed(1)}deg`,
-        `peak yaw      ${this.peakYaw.toFixed(1)}deg`,
-        `lap           ${(this.rig.s / PERIMETER).toFixed(2)}`,
+        `${Math.round(this.game.loop.actualFps)} fps  ${cfg.distanceThrottle ? 'DISTANCE throttle' : 'auto throttle'}`,
+        `speed   ${this.car.speed().toFixed(1)} m/s  (trailer ${cfg.trailerSpeed.toFixed(1)})`,
+        `brake   ${this.car.braking ? 'ON' : '-'}${this.car.sliding ? '   SLIDING' : ''}`,
+        `lap     ${(this.carProgress / PERIMETER).toFixed(2)}`,
+        `hitch   ${yaw.toFixed(1)}deg  peak ${this.peakYaw.toFixed(1)}  loose ${cfg.hitchLoose.toFixed(2)}`,
       ].join('\n')
     );
+  }
+
+  /** Bookkeeping after each physics step: lap progress and rig contacts. */
+  afterStep() {
+    const cp = this.car.pose();
+    const s = project(cp.x, cp.y).s;
+    let ds = s - this.carLastS;
+    if (ds > PERIMETER / 2) ds -= PERIMETER;
+    if (ds < -PERIMETER / 2) ds += PERIMETER;
+    this.carProgress += ds;
+    this.carLastS = s;
+    if (this.carTouchingRig()) this.contactFrames += 1;
   }
 
   /** Plain-number snapshot of everything the HUD shows, for `npm run capture`. */
@@ -156,7 +240,57 @@ export default class PlayScene extends Phaser.Scene {
       trailer: { x: tp.x, y: tp.y, angle: tp.angle },
       hitchYawDeg: Phaser.Math.RadToDeg(yaw),
       peakYawDeg: this.peakYaw,
+      car: this.carState(),
     };
+  }
+
+  carState() {
+    const cp = this.car.pose();
+    const v = this.car.body.linvel();
+    const pr = project(cp.x, cp.y);
+    const c = this.controls ?? {};
+    return {
+      x: cp.x,
+      y: cp.y,
+      angle: cp.angle,
+      angvel: this.car.body.angvel(),
+      speed: this.car.speed(),
+      vx: v.x,
+      vy: v.y,
+      targetSpeed: this.car.targetSpeed,
+      braking: this.car.braking,
+      sliding: this.car.sliding,
+      laps: this.carProgress / PERIMETER,
+      trackOffset: pr.offset,
+      onAsphalt: Math.abs(pr.offset) <= TRACK.width / 2 - CAR.wid / 2,
+      contactFrames: this.contactFrames,
+      steerTarget: c.target ?? null,
+      steerAxis: c.steerAxis ?? 0,
+      distanceThrottle: cfg.distanceThrottle,
+    };
+  }
+
+  drawCar() {
+    const g = this.carGfx;
+    g.clear();
+    const p = this.car.pose();
+    const hl = CAR.len / 2;
+    const hw = CAR.wid / 2;
+    g.save();
+    g.translateCanvas(mToPx(p.x), mToPx(p.y));
+    g.rotateCanvas(p.angle);
+    const rect = (x0, y0, x1, y1, c) => {
+      g.fillStyle(c, 1);
+      g.fillRect(mToPx(x0), mToPx(y0), mToPx(x1 - x0), mToPx(y1 - y0));
+    };
+    rect(-hl, -hw, hl, hw, COL.car);
+    rect(0.2, -hw + 0.2, 1.1, hw - 0.2, COL.carGlass); // windscreen
+    // Tail lights, bright and oversized while braking so it reads on a phone.
+    const lit = this.car.braking;
+    const tl = lit ? 0.5 : 0.25;
+    rect(-hl - (lit ? 0.2 : 0), -hw, -hl + tl, -hw + 0.5, lit ? COL.brakeLight : COL.tailLight);
+    rect(-hl - (lit ? 0.2 : 0), hw - 0.5, -hl + tl, hw, lit ? COL.brakeLight : COL.tailLight);
+    g.restore();
   }
 
   drawRig() {

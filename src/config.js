@@ -54,6 +54,25 @@ export const MODEL = {
     headboardRestitution: 0.2, // bounce off the headboard on an overshoot
     mass: 1200, // kg; with the deck size, sets inertia and the swing's frequency
   },
+
+  // Player car. Arcade top-down model; see src/car.js.
+  car: {
+    len: 4.2,
+    wid: 1.8,
+    mass: 1100, // kg
+    friction: 0.5, // Rapier contact friction
+    restitution: 0.15, // bounce off the truck / headboard
+    // Tire grip slider at 1.0 means: sideways slip dies away at this rate (1/s)...
+    gripRateAtFull: 30,
+    // ...up to this much sideways acceleration (m/s^2), after which it slides.
+    // At the 0.85 default that is 17 m/s^2, enough for top speed round the oval.
+    gripAccelAtFull: 20,
+    brakeToAccel: 2, // braking decel = this x the Acceleration slider
+    fullSteerSpeed: 3, // m/s; below this the turn rate scales down, so it can't spin in place
+    // Distance throttle: a thumb this far ahead of the car (m) asks for top speed.
+    distanceThrottleRange: 25,
+    startBehind: 20, // m of racing line behind the truck's start point
+  },
 };
 
 /** Live values. Mutated by the debug panel; read every physics step. */

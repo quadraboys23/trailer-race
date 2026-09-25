@@ -70,6 +70,30 @@ export function segmentAt(s) {
   return 'leftArc';
 }
 
+/**
+ * Nearest point on the racing line: arc length `s` and signed `offset`
+ * (metres, + is the outside of the oval). Inverse of sampleLine + normal.
+ */
+export function project(x, y) {
+  if (Math.abs(x) <= L / 2) {
+    if (y >= 0) return { s: x + L / 2, offset: y - R };
+    return { s: L + SEG.rightArc + (L / 2 - x), offset: -y - R };
+  }
+  if (x > L / 2) {
+    const theta = Math.atan2(y, x - L / 2); // pi/2 at the bottom, -pi/2 at the top
+    return { s: L + (Math.PI / 2 - theta) * R, offset: Math.hypot(x - L / 2, y) - R };
+  }
+  let theta = Math.atan2(y, x + L / 2); // -pi/2 at the top, round to -3pi/2 at the bottom
+  if (theta > -Math.PI / 2) theta -= 2 * Math.PI;
+  return { s: 2 * L + SEG.rightArc + (-Math.PI / 2 - theta) * R, offset: Math.hypot(x + L / 2, y) - R };
+}
+
+/** A point `offset` metres outside the racing line at arc length `s`. */
+export function pointAt(s, offset = 0) {
+  const p = sampleLine(s);
+  return { x: p.x - Math.sin(p.angle) * offset, y: p.y + Math.cos(p.angle) * offset, angle: p.angle };
+}
+
 /** Outer bound of the drawn asphalt, for framing the overview camera. */
 export const TRACK_BOUNDS = {
   halfW: L / 2 + R + TRACK.width / 2,

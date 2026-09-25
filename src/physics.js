@@ -37,13 +37,15 @@ export class Physics {
    * Advances the world by whole fixed steps.
    * @param {number} dtMs frame delta in milliseconds, from Phaser
    * @param {(dt: number) => void} [onStep] called before each step, for per-step forces
+   * @param {() => void} [afterStep] called after each step, for bookkeeping
    */
-  step(dtMs, onStep) {
+  step(dtMs, onStep, afterStep) {
     this.accumulator += Math.min(dtMs, 250) / 1000;
     let steps = 0;
     while (this.accumulator >= FIXED_DT && steps < MAX_STEPS_PER_FRAME) {
       if (onStep) onStep(FIXED_DT);
       this.world.step();
+      if (afterStep) afterStep();
       this.accumulator -= FIXED_DT;
       steps += 1;
     }

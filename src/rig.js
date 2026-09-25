@@ -67,7 +67,7 @@ export class Rig {
         .setTranslation(start.x, start.y)
         .setRotation(start.angle)
     );
-    world.createCollider(
+    this.truckCollider = world.createCollider(
       RAPIER.ColliderDesc.cuboid(TRUCK.len / 2, TRUCK.wid / 2).setFriction(TRUCK.friction).setRestitution(TRUCK.restitution),
       this.truck
     );
@@ -98,7 +98,7 @@ export class Rig {
 
     // The headboard at the front of the deck IS solid — this is the "tailgate"
     // that a car overshooting the deck slams into.
-    world.createCollider(
+    this.headboardCollider = world.createCollider(
       RAPIER.ColliderDesc.cuboid(TRAILER.headboardHalf, TRAILER.deckHalfWid)
         .setTranslation(TRAILER.headboardX, 0)
         .setDensity(0)
