@@ -234,7 +234,7 @@ Added by Walker on 2026-09-25. Milestones run autonomously between checkpoints.
 
 - [ ] **M1** Vite + Phaser + Rapier scaffold. Empty scene runs on desktop and on
       the phone over LAN. *Stop here for Walker's phone check.*
-- [ ] **M2** Oval track drawn. Kinematic truck follows the racing line at
+- [x] **M2** Oval track drawn. Kinematic truck follows the racing line at
       constant speed, trailer on a revolute hitch and fishtails. Solid tailgate,
       sensor deck.
 - [ ] **M3** Player car: top-down lateral-friction physics, drag-to-steer,

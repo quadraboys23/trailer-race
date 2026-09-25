@@ -135,9 +135,9 @@ export class Rig {
   }
 
   /**
-   * Trailer tyres. Lateral velocity at the axle is cancelled by an impulse
-   * applied AT the axle, so it produces the yaw torque that makes it fishtail.
-   * Hitch looseness is how little of that lateral velocity gets cancelled.
+   * Trailer tyres, slip-angle model (see the note above STIFF_MAX). The force is
+   * applied AT the axle, so it also yaws the trailer, which is what fishtails.
+   * Hitch looseness lowers the cornering stiffness.
    */
   applyTrailerGrip(dt) {
     const b = this.trailer;
