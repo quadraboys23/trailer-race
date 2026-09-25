@@ -7,7 +7,7 @@
   "width": 390,
   "height": 844
  },
- "capturedAt": "2026-09-25T22:32:43.587Z",
+ "capturedAt": "2026-09-25T22:37:51.216Z",
  "consoleErrors": [],
  "config": {
   "topSpeed": 22,
@@ -1229,8 +1229,8 @@
     "onAsphalt": false,
     "contactFrames": 0,
     "steerTarget": {
-     "x": 0.005,
-     "y": 5.974
+     "x": -23.495,
+     "y": 33.974
     },
     "steerAxis": 0,
     "distanceThrottle": false
@@ -1269,8 +1269,8 @@
     "onAsphalt": false,
     "contactFrames": 0,
     "steerTarget": {
-     "x": 0.005,
-     "y": 5.974
+     "x": -23.278,
+     "y": 33.974
     },
     "steerAxis": 0,
     "distanceThrottle": false
@@ -1309,8 +1309,8 @@
     "onAsphalt": false,
     "contactFrames": 0,
     "steerTarget": {
-     "x": 0.005,
-     "y": 5.974
+     "x": -23.061,
+     "y": 33.974
     },
     "steerAxis": 0,
     "distanceThrottle": false
@@ -1349,8 +1349,8 @@
     "onAsphalt": false,
     "contactFrames": 0,
     "steerTarget": {
-     "x": 0.005,
-     "y": 5.974
+     "x": -22.845,
+     "y": 33.974
     },
     "steerAxis": 0,
     "distanceThrottle": false
@@ -1389,8 +1389,8 @@
     "onAsphalt": false,
     "contactFrames": 0,
     "steerTarget": {
-     "x": 0.005,
-     "y": 5.974
+     "x": -22.628,
+     "y": 33.974
     },
     "steerAxis": 0,
     "distanceThrottle": false
@@ -1429,8 +1429,8 @@
     "onAsphalt": false,
     "contactFrames": 0,
     "steerTarget": {
-     "x": 0.005,
-     "y": 5.974
+     "x": -22.411,
+     "y": 33.974
     },
     "steerAxis": 0,
     "distanceThrottle": false

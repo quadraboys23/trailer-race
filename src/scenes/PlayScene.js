@@ -196,8 +196,9 @@ export default class PlayScene extends Phaser.Scene {
     this.drawCar();
 
     const cam = this.cameras.main;
-    const cp = this.car.pose();
-    if (!this.overview) cam.centerOn(mToPx(cp.x), mToPx(cp.y));
+    // Follow the car; with the car parked (rig-only captures), follow the truck.
+    const f = this.car.parked ? this.rig.truck.translation() : this.car.pose();
+    if (!this.overview) cam.centerOn(mToPx(f.x), mToPx(f.y));
 
     const tp = this.rig.pose();
     const yaw = Phaser.Math.RadToDeg(
