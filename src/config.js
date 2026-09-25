@@ -19,6 +19,20 @@ export const TOGGLES = {
   distanceThrottle: { label: 'Distance throttle', def: false },
 };
 
+// Fixed model constants: part of how the physics works, not player-facing
+// knobs, so they have no slider (the brief fixes the slider list at eleven).
+// Walker's rule, 2026-09-25: model constants live here, named and explained;
+// only tunables a player-tester would reach for get a slider. Why each value
+// is what it is: see the comments where it is used in src/rig.js.
+export const MODEL = {
+  trailerStiffMax: 90000, // N/rad of tyre slip at hitchLoose 0: tracks tightly
+  trailerStiffMin: 16000, // N/rad at hitchLoose 1; below ~15000 it jackknifes
+  trailerGripCap: 10000, // N, trailer tyre friction limit
+  hitchDamp: 30000, // N*m per rad/s of trailer yaw rate relative to the truck
+  trailerLinearDamping: 0.15, // Rapier damping, 1/s
+  trailerAngularDamping: 0.05, // Rapier damping, 1/s
+};
+
 /** Live values. Mutated by the debug panel; read every physics step. */
 // Trailer speed tops out at 17 m/s deliberately: measured, a 28m corner radius
 // cannot hold a trailer faster than that at any looseness — past 18 it walks

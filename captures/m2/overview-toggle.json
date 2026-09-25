@@ -1,0 +1,3870 @@
+{
+ "milestone": "m2",
+ "name": "overview-toggle",
+ "title": "button + Z toggle overview; tapping the play area does not",
+ "url": "/?capture=1",
+ "viewport": {
+  "width": 390,
+  "height": 844
+ },
+ "capturedAt": "2026-09-25T22:13:47.019Z",
+ "consoleErrors": [],
+ "config": {
+  "topSpeed": 22,
+  "accel": 14,
+  "tireGrip": 0.85,
+  "steerRate": 3.2,
+  "trailerSpeed": 13,
+  "deckGrip": 0.55,
+  "overhangPenalty": 0.7,
+  "fallImpulse": 6,
+  "hitchLoose": 0.45,
+  "shoveStrength": 18,
+  "roundLength": 60,
+  "distanceThrottle": false
+ },
+ "summary": {
+  "pass": true,
+  "checks": [
+   {
+    "what": "start",
+    "t": 0.4,
+    "want": false,
+    "got": false
+   },
+   {
+    "what": "after tap on play area",
+    "t": 0.9,
+    "want": false,
+    "got": false
+   },
+   {
+    "what": "after overview button",
+    "t": 1.4,
+    "want": true,
+    "got": true
+   },
+   {
+    "what": "after Z",
+    "t": 2.4,
+    "want": false,
+    "got": false
+   },
+   {
+    "what": "after Z again",
+    "t": 3.4,
+    "want": true,
+    "got": true
+   }
+  ]
+ },
+ "frames": [
+  {
+   "frame": 24,
+   "t": 0.4,
+   "label": "overview false"
+  },
+  {
+   "frame": 54,
+   "t": 0.9,
+   "label": "overview false"
+  },
+  {
+   "frame": 84,
+   "t": 1.4,
+   "label": "overview true"
+  },
+  {
+   "frame": 144,
+   "t": 2.4,
+   "label": "overview false"
+  },
+  {
+   "frame": 204,
+   "t": 3.4,
+   "label": "overview true"
+  }
+ ],
+ "trace": [
+  {
+   "t": 0.017,
+   "overview": false,
+   "lap": 0.001,
+   "segment": "bottom",
+   "truck": {
+    "x": -29.783,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -37.283,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.033,
+   "overview": false,
+   "lap": 0.001,
+   "segment": "bottom",
+   "truck": {
+    "x": -29.567,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -37.067,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.05,
+   "overview": false,
+   "lap": 0.002,
+   "segment": "bottom",
+   "truck": {
+    "x": -29.35,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -36.85,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.067,
+   "overview": false,
+   "lap": 0.003,
+   "segment": "bottom",
+   "truck": {
+    "x": -29.133,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -36.633,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.083,
+   "overview": false,
+   "lap": 0.004,
+   "segment": "bottom",
+   "truck": {
+    "x": -28.917,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -36.417,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.1,
+   "overview": false,
+   "lap": 0.004,
+   "segment": "bottom",
+   "truck": {
+    "x": -28.7,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -36.2,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.117,
+   "overview": false,
+   "lap": 0.005,
+   "segment": "bottom",
+   "truck": {
+    "x": -28.483,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -35.983,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.133,
+   "overview": false,
+   "lap": 0.006,
+   "segment": "bottom",
+   "truck": {
+    "x": -28.267,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -35.767,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.15,
+   "overview": false,
+   "lap": 0.007,
+   "segment": "bottom",
+   "truck": {
+    "x": -28.05,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -35.55,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.167,
+   "overview": false,
+   "lap": 0.007,
+   "segment": "bottom",
+   "truck": {
+    "x": -27.833,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -35.333,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.183,
+   "overview": false,
+   "lap": 0.008,
+   "segment": "bottom",
+   "truck": {
+    "x": -27.617,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -35.117,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.2,
+   "overview": false,
+   "lap": 0.009,
+   "segment": "bottom",
+   "truck": {
+    "x": -27.4,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -34.9,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.217,
+   "overview": false,
+   "lap": 0.01,
+   "segment": "bottom",
+   "truck": {
+    "x": -27.183,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -34.683,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.233,
+   "overview": false,
+   "lap": 0.01,
+   "segment": "bottom",
+   "truck": {
+    "x": -26.967,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -34.467,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.25,
+   "overview": false,
+   "lap": 0.011,
+   "segment": "bottom",
+   "truck": {
+    "x": -26.75,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -34.25,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.267,
+   "overview": false,
+   "lap": 0.012,
+   "segment": "bottom",
+   "truck": {
+    "x": -26.533,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -34.033,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.283,
+   "overview": false,
+   "lap": 0.012,
+   "segment": "bottom",
+   "truck": {
+    "x": -26.317,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -33.817,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.3,
+   "overview": false,
+   "lap": 0.013,
+   "segment": "bottom",
+   "truck": {
+    "x": -26.1,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -33.6,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.317,
+   "overview": false,
+   "lap": 0.014,
+   "segment": "bottom",
+   "truck": {
+    "x": -25.883,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -33.383,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.333,
+   "overview": false,
+   "lap": 0.015,
+   "segment": "bottom",
+   "truck": {
+    "x": -25.667,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -33.167,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.35,
+   "overview": false,
+   "lap": 0.015,
+   "segment": "bottom",
+   "truck": {
+    "x": -25.45,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -32.95,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.367,
+   "overview": false,
+   "lap": 0.016,
+   "segment": "bottom",
+   "truck": {
+    "x": -25.233,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -32.733,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.383,
+   "overview": false,
+   "lap": 0.017,
+   "segment": "bottom",
+   "truck": {
+    "x": -25.017,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -32.517,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.4,
+   "overview": false,
+   "lap": 0.018,
+   "segment": "bottom",
+   "truck": {
+    "x": -24.8,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -32.3,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.417,
+   "overview": false,
+   "lap": 0.018,
+   "segment": "bottom",
+   "truck": {
+    "x": -24.583,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -32.083,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.433,
+   "overview": false,
+   "lap": 0.019,
+   "segment": "bottom",
+   "truck": {
+    "x": -24.367,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -31.867,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.45,
+   "overview": false,
+   "lap": 0.02,
+   "segment": "bottom",
+   "truck": {
+    "x": -24.15,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -31.65,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.467,
+   "overview": false,
+   "lap": 0.021,
+   "segment": "bottom",
+   "truck": {
+    "x": -23.933,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -31.433,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.483,
+   "overview": false,
+   "lap": 0.021,
+   "segment": "bottom",
+   "truck": {
+    "x": -23.717,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -31.217,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.5,
+   "overview": false,
+   "lap": 0.022,
+   "segment": "bottom",
+   "truck": {
+    "x": -23.5,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -31,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.517,
+   "overview": false,
+   "lap": 0.023,
+   "segment": "bottom",
+   "truck": {
+    "x": -23.283,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -30.783,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.533,
+   "overview": false,
+   "lap": 0.023,
+   "segment": "bottom",
+   "truck": {
+    "x": -23.067,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -30.567,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.55,
+   "overview": false,
+   "lap": 0.024,
+   "segment": "bottom",
+   "truck": {
+    "x": -22.85,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -30.35,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.567,
+   "overview": false,
+   "lap": 0.025,
+   "segment": "bottom",
+   "truck": {
+    "x": -22.633,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -30.133,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.583,
+   "overview": false,
+   "lap": 0.026,
+   "segment": "bottom",
+   "truck": {
+    "x": -22.417,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -29.917,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.6,
+   "overview": false,
+   "lap": 0.026,
+   "segment": "bottom",
+   "truck": {
+    "x": -22.2,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -29.7,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.617,
+   "overview": false,
+   "lap": 0.027,
+   "segment": "bottom",
+   "truck": {
+    "x": -21.983,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -29.483,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.633,
+   "overview": false,
+   "lap": 0.028,
+   "segment": "bottom",
+   "truck": {
+    "x": -21.767,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -29.267,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.65,
+   "overview": false,
+   "lap": 0.029,
+   "segment": "bottom",
+   "truck": {
+    "x": -21.55,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -29.05,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.667,
+   "overview": false,
+   "lap": 0.029,
+   "segment": "bottom",
+   "truck": {
+    "x": -21.333,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -28.833,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.683,
+   "overview": false,
+   "lap": 0.03,
+   "segment": "bottom",
+   "truck": {
+    "x": -21.117,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -28.617,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.7,
+   "overview": false,
+   "lap": 0.031,
+   "segment": "bottom",
+   "truck": {
+    "x": -20.9,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -28.4,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.717,
+   "overview": false,
+   "lap": 0.031,
+   "segment": "bottom",
+   "truck": {
+    "x": -20.683,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -28.183,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.733,
+   "overview": false,
+   "lap": 0.032,
+   "segment": "bottom",
+   "truck": {
+    "x": -20.467,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -27.967,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.75,
+   "overview": false,
+   "lap": 0.033,
+   "segment": "bottom",
+   "truck": {
+    "x": -20.25,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -27.75,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.767,
+   "overview": false,
+   "lap": 0.034,
+   "segment": "bottom",
+   "truck": {
+    "x": -20.033,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -27.533,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.783,
+   "overview": false,
+   "lap": 0.034,
+   "segment": "bottom",
+   "truck": {
+    "x": -19.817,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -27.317,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.8,
+   "overview": false,
+   "lap": 0.035,
+   "segment": "bottom",
+   "truck": {
+    "x": -19.6,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -27.1,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.817,
+   "overview": false,
+   "lap": 0.036,
+   "segment": "bottom",
+   "truck": {
+    "x": -19.383,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -26.883,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.833,
+   "overview": false,
+   "lap": 0.037,
+   "segment": "bottom",
+   "truck": {
+    "x": -19.167,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -26.667,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.85,
+   "overview": false,
+   "lap": 0.037,
+   "segment": "bottom",
+   "truck": {
+    "x": -18.95,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -26.45,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.867,
+   "overview": false,
+   "lap": 0.038,
+   "segment": "bottom",
+   "truck": {
+    "x": -18.733,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -26.233,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.883,
+   "overview": false,
+   "lap": 0.039,
+   "segment": "bottom",
+   "truck": {
+    "x": -18.517,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -26.017,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.9,
+   "overview": false,
+   "lap": 0.04,
+   "segment": "bottom",
+   "truck": {
+    "x": -18.3,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -25.8,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.917,
+   "overview": false,
+   "lap": 0.04,
+   "segment": "bottom",
+   "truck": {
+    "x": -18.083,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -25.583,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.933,
+   "overview": false,
+   "lap": 0.041,
+   "segment": "bottom",
+   "truck": {
+    "x": -17.867,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -25.367,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.95,
+   "overview": false,
+   "lap": 0.042,
+   "segment": "bottom",
+   "truck": {
+    "x": -17.65,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -25.15,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.967,
+   "overview": false,
+   "lap": 0.042,
+   "segment": "bottom",
+   "truck": {
+    "x": -17.433,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -24.933,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 0.983,
+   "overview": false,
+   "lap": 0.043,
+   "segment": "bottom",
+   "truck": {
+    "x": -17.217,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -24.717,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1,
+   "overview": false,
+   "lap": 0.044,
+   "segment": "bottom",
+   "truck": {
+    "x": -17,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -24.5,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.017,
+   "overview": true,
+   "lap": 0.045,
+   "segment": "bottom",
+   "truck": {
+    "x": -16.783,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -24.283,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.033,
+   "overview": true,
+   "lap": 0.045,
+   "segment": "bottom",
+   "truck": {
+    "x": -16.567,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -24.067,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.05,
+   "overview": true,
+   "lap": 0.046,
+   "segment": "bottom",
+   "truck": {
+    "x": -16.35,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -23.85,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.067,
+   "overview": true,
+   "lap": 0.047,
+   "segment": "bottom",
+   "truck": {
+    "x": -16.133,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -23.633,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.083,
+   "overview": true,
+   "lap": 0.048,
+   "segment": "bottom",
+   "truck": {
+    "x": -15.917,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -23.417,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.1,
+   "overview": true,
+   "lap": 0.048,
+   "segment": "bottom",
+   "truck": {
+    "x": -15.7,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -23.2,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.117,
+   "overview": true,
+   "lap": 0.049,
+   "segment": "bottom",
+   "truck": {
+    "x": -15.483,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -22.983,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.133,
+   "overview": true,
+   "lap": 0.05,
+   "segment": "bottom",
+   "truck": {
+    "x": -15.267,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -22.767,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.15,
+   "overview": true,
+   "lap": 0.051,
+   "segment": "bottom",
+   "truck": {
+    "x": -15.05,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -22.55,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.167,
+   "overview": true,
+   "lap": 0.051,
+   "segment": "bottom",
+   "truck": {
+    "x": -14.833,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -22.333,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.183,
+   "overview": true,
+   "lap": 0.052,
+   "segment": "bottom",
+   "truck": {
+    "x": -14.617,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -22.117,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.2,
+   "overview": true,
+   "lap": 0.053,
+   "segment": "bottom",
+   "truck": {
+    "x": -14.4,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -21.9,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.217,
+   "overview": true,
+   "lap": 0.053,
+   "segment": "bottom",
+   "truck": {
+    "x": -14.183,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -21.683,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.233,
+   "overview": true,
+   "lap": 0.054,
+   "segment": "bottom",
+   "truck": {
+    "x": -13.967,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -21.467,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.25,
+   "overview": true,
+   "lap": 0.055,
+   "segment": "bottom",
+   "truck": {
+    "x": -13.75,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -21.25,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.267,
+   "overview": true,
+   "lap": 0.056,
+   "segment": "bottom",
+   "truck": {
+    "x": -13.533,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -21.033,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.283,
+   "overview": true,
+   "lap": 0.056,
+   "segment": "bottom",
+   "truck": {
+    "x": -13.317,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -20.817,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.3,
+   "overview": true,
+   "lap": 0.057,
+   "segment": "bottom",
+   "truck": {
+    "x": -13.1,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -20.6,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.317,
+   "overview": true,
+   "lap": 0.058,
+   "segment": "bottom",
+   "truck": {
+    "x": -12.883,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -20.383,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.333,
+   "overview": true,
+   "lap": 0.059,
+   "segment": "bottom",
+   "truck": {
+    "x": -12.667,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -20.167,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.35,
+   "overview": true,
+   "lap": 0.059,
+   "segment": "bottom",
+   "truck": {
+    "x": -12.45,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -19.95,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.367,
+   "overview": true,
+   "lap": 0.06,
+   "segment": "bottom",
+   "truck": {
+    "x": -12.233,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -19.733,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.383,
+   "overview": true,
+   "lap": 0.061,
+   "segment": "bottom",
+   "truck": {
+    "x": -12.017,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -19.517,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.4,
+   "overview": true,
+   "lap": 0.062,
+   "segment": "bottom",
+   "truck": {
+    "x": -11.8,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -19.3,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.417,
+   "overview": true,
+   "lap": 0.062,
+   "segment": "bottom",
+   "truck": {
+    "x": -11.583,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -19.083,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.433,
+   "overview": true,
+   "lap": 0.063,
+   "segment": "bottom",
+   "truck": {
+    "x": -11.367,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -18.867,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.45,
+   "overview": true,
+   "lap": 0.064,
+   "segment": "bottom",
+   "truck": {
+    "x": -11.15,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -18.65,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.467,
+   "overview": true,
+   "lap": 0.064,
+   "segment": "bottom",
+   "truck": {
+    "x": -10.933,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -18.433,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.483,
+   "overview": true,
+   "lap": 0.065,
+   "segment": "bottom",
+   "truck": {
+    "x": -10.717,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -18.217,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.5,
+   "overview": true,
+   "lap": 0.066,
+   "segment": "bottom",
+   "truck": {
+    "x": -10.5,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -18,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.517,
+   "overview": true,
+   "lap": 0.067,
+   "segment": "bottom",
+   "truck": {
+    "x": -10.283,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -17.783,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.533,
+   "overview": true,
+   "lap": 0.067,
+   "segment": "bottom",
+   "truck": {
+    "x": -10.067,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -17.567,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.55,
+   "overview": true,
+   "lap": 0.068,
+   "segment": "bottom",
+   "truck": {
+    "x": -9.85,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -17.35,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.567,
+   "overview": true,
+   "lap": 0.069,
+   "segment": "bottom",
+   "truck": {
+    "x": -9.633,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -17.133,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.583,
+   "overview": true,
+   "lap": 0.07,
+   "segment": "bottom",
+   "truck": {
+    "x": -9.417,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -16.917,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.6,
+   "overview": true,
+   "lap": 0.07,
+   "segment": "bottom",
+   "truck": {
+    "x": -9.2,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -16.7,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.617,
+   "overview": true,
+   "lap": 0.071,
+   "segment": "bottom",
+   "truck": {
+    "x": -8.983,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -16.483,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.633,
+   "overview": true,
+   "lap": 0.072,
+   "segment": "bottom",
+   "truck": {
+    "x": -8.767,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -16.267,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.65,
+   "overview": true,
+   "lap": 0.072,
+   "segment": "bottom",
+   "truck": {
+    "x": -8.55,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -16.05,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.667,
+   "overview": true,
+   "lap": 0.073,
+   "segment": "bottom",
+   "truck": {
+    "x": -8.333,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -15.833,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.683,
+   "overview": true,
+   "lap": 0.074,
+   "segment": "bottom",
+   "truck": {
+    "x": -8.117,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -15.617,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.7,
+   "overview": true,
+   "lap": 0.075,
+   "segment": "bottom",
+   "truck": {
+    "x": -7.9,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -15.4,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.717,
+   "overview": true,
+   "lap": 0.075,
+   "segment": "bottom",
+   "truck": {
+    "x": -7.683,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -15.183,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.733,
+   "overview": true,
+   "lap": 0.076,
+   "segment": "bottom",
+   "truck": {
+    "x": -7.467,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -14.967,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.75,
+   "overview": true,
+   "lap": 0.077,
+   "segment": "bottom",
+   "truck": {
+    "x": -7.25,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -14.75,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.767,
+   "overview": true,
+   "lap": 0.078,
+   "segment": "bottom",
+   "truck": {
+    "x": -7.033,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -14.533,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.783,
+   "overview": true,
+   "lap": 0.078,
+   "segment": "bottom",
+   "truck": {
+    "x": -6.817,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -14.317,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.8,
+   "overview": true,
+   "lap": 0.079,
+   "segment": "bottom",
+   "truck": {
+    "x": -6.6,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -14.1,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.817,
+   "overview": true,
+   "lap": 0.08,
+   "segment": "bottom",
+   "truck": {
+    "x": -6.383,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -13.883,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.833,
+   "overview": true,
+   "lap": 0.081,
+   "segment": "bottom",
+   "truck": {
+    "x": -6.167,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -13.667,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.85,
+   "overview": true,
+   "lap": 0.081,
+   "segment": "bottom",
+   "truck": {
+    "x": -5.95,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -13.45,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.867,
+   "overview": true,
+   "lap": 0.082,
+   "segment": "bottom",
+   "truck": {
+    "x": -5.733,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -13.233,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.883,
+   "overview": true,
+   "lap": 0.083,
+   "segment": "bottom",
+   "truck": {
+    "x": -5.517,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -13.017,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.9,
+   "overview": true,
+   "lap": 0.083,
+   "segment": "bottom",
+   "truck": {
+    "x": -5.3,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -12.8,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.917,
+   "overview": true,
+   "lap": 0.084,
+   "segment": "bottom",
+   "truck": {
+    "x": -5.083,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -12.583,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.933,
+   "overview": true,
+   "lap": 0.085,
+   "segment": "bottom",
+   "truck": {
+    "x": -4.867,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -12.367,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.95,
+   "overview": true,
+   "lap": 0.086,
+   "segment": "bottom",
+   "truck": {
+    "x": -4.65,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -12.15,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.967,
+   "overview": true,
+   "lap": 0.086,
+   "segment": "bottom",
+   "truck": {
+    "x": -4.433,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -11.933,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 1.983,
+   "overview": true,
+   "lap": 0.087,
+   "segment": "bottom",
+   "truck": {
+    "x": -4.217,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -11.717,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2,
+   "overview": true,
+   "lap": 0.088,
+   "segment": "bottom",
+   "truck": {
+    "x": -4,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -11.5,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.017,
+   "overview": false,
+   "lap": 0.089,
+   "segment": "bottom",
+   "truck": {
+    "x": -3.783,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -11.283,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.033,
+   "overview": false,
+   "lap": 0.089,
+   "segment": "bottom",
+   "truck": {
+    "x": -3.567,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -11.067,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.05,
+   "overview": false,
+   "lap": 0.09,
+   "segment": "bottom",
+   "truck": {
+    "x": -3.35,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -10.85,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.067,
+   "overview": false,
+   "lap": 0.091,
+   "segment": "bottom",
+   "truck": {
+    "x": -3.133,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -10.633,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.083,
+   "overview": false,
+   "lap": 0.092,
+   "segment": "bottom",
+   "truck": {
+    "x": -2.917,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -10.417,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.1,
+   "overview": false,
+   "lap": 0.092,
+   "segment": "bottom",
+   "truck": {
+    "x": -2.7,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -10.2,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.117,
+   "overview": false,
+   "lap": 0.093,
+   "segment": "bottom",
+   "truck": {
+    "x": -2.483,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -9.983,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.133,
+   "overview": false,
+   "lap": 0.094,
+   "segment": "bottom",
+   "truck": {
+    "x": -2.267,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -9.767,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.15,
+   "overview": false,
+   "lap": 0.094,
+   "segment": "bottom",
+   "truck": {
+    "x": -2.05,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -9.55,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.167,
+   "overview": false,
+   "lap": 0.095,
+   "segment": "bottom",
+   "truck": {
+    "x": -1.833,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -9.333,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.183,
+   "overview": false,
+   "lap": 0.096,
+   "segment": "bottom",
+   "truck": {
+    "x": -1.617,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -9.117,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.2,
+   "overview": false,
+   "lap": 0.097,
+   "segment": "bottom",
+   "truck": {
+    "x": -1.4,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -8.9,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.217,
+   "overview": false,
+   "lap": 0.097,
+   "segment": "bottom",
+   "truck": {
+    "x": -1.183,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -8.683,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.233,
+   "overview": false,
+   "lap": 0.098,
+   "segment": "bottom",
+   "truck": {
+    "x": -0.967,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -8.467,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.25,
+   "overview": false,
+   "lap": 0.099,
+   "segment": "bottom",
+   "truck": {
+    "x": -0.75,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -8.25,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.267,
+   "overview": false,
+   "lap": 0.1,
+   "segment": "bottom",
+   "truck": {
+    "x": -0.533,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -8.033,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.283,
+   "overview": false,
+   "lap": 0.1,
+   "segment": "bottom",
+   "truck": {
+    "x": -0.317,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -7.817,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.3,
+   "overview": false,
+   "lap": 0.101,
+   "segment": "bottom",
+   "truck": {
+    "x": -0.1,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -7.6,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.317,
+   "overview": false,
+   "lap": 0.102,
+   "segment": "bottom",
+   "truck": {
+    "x": 0.117,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -7.383,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.333,
+   "overview": false,
+   "lap": 0.103,
+   "segment": "bottom",
+   "truck": {
+    "x": 0.333,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -7.167,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.35,
+   "overview": false,
+   "lap": 0.103,
+   "segment": "bottom",
+   "truck": {
+    "x": 0.55,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -6.95,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.367,
+   "overview": false,
+   "lap": 0.104,
+   "segment": "bottom",
+   "truck": {
+    "x": 0.767,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -6.733,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.383,
+   "overview": false,
+   "lap": 0.105,
+   "segment": "bottom",
+   "truck": {
+    "x": 0.983,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -6.517,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.4,
+   "overview": false,
+   "lap": 0.105,
+   "segment": "bottom",
+   "truck": {
+    "x": 1.2,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -6.3,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.417,
+   "overview": false,
+   "lap": 0.106,
+   "segment": "bottom",
+   "truck": {
+    "x": 1.417,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -6.083,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.433,
+   "overview": false,
+   "lap": 0.107,
+   "segment": "bottom",
+   "truck": {
+    "x": 1.633,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -5.867,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.45,
+   "overview": false,
+   "lap": 0.108,
+   "segment": "bottom",
+   "truck": {
+    "x": 1.85,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -5.65,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.467,
+   "overview": false,
+   "lap": 0.108,
+   "segment": "bottom",
+   "truck": {
+    "x": 2.067,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -5.433,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.483,
+   "overview": false,
+   "lap": 0.109,
+   "segment": "bottom",
+   "truck": {
+    "x": 2.283,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -5.217,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.5,
+   "overview": false,
+   "lap": 0.11,
+   "segment": "bottom",
+   "truck": {
+    "x": 2.5,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -5,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.517,
+   "overview": false,
+   "lap": 0.111,
+   "segment": "bottom",
+   "truck": {
+    "x": 2.717,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -4.783,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.533,
+   "overview": false,
+   "lap": 0.111,
+   "segment": "bottom",
+   "truck": {
+    "x": 2.933,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -4.567,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.55,
+   "overview": false,
+   "lap": 0.112,
+   "segment": "bottom",
+   "truck": {
+    "x": 3.15,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -4.35,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.567,
+   "overview": false,
+   "lap": 0.113,
+   "segment": "bottom",
+   "truck": {
+    "x": 3.367,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -4.133,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.583,
+   "overview": false,
+   "lap": 0.113,
+   "segment": "bottom",
+   "truck": {
+    "x": 3.583,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -3.917,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.6,
+   "overview": false,
+   "lap": 0.114,
+   "segment": "bottom",
+   "truck": {
+    "x": 3.8,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -3.7,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.617,
+   "overview": false,
+   "lap": 0.115,
+   "segment": "bottom",
+   "truck": {
+    "x": 4.017,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -3.483,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.633,
+   "overview": false,
+   "lap": 0.116,
+   "segment": "bottom",
+   "truck": {
+    "x": 4.233,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -3.267,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.65,
+   "overview": false,
+   "lap": 0.116,
+   "segment": "bottom",
+   "truck": {
+    "x": 4.45,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -3.05,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.667,
+   "overview": false,
+   "lap": 0.117,
+   "segment": "bottom",
+   "truck": {
+    "x": 4.667,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -2.833,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.683,
+   "overview": false,
+   "lap": 0.118,
+   "segment": "bottom",
+   "truck": {
+    "x": 4.883,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -2.617,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.7,
+   "overview": false,
+   "lap": 0.119,
+   "segment": "bottom",
+   "truck": {
+    "x": 5.1,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -2.4,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.717,
+   "overview": false,
+   "lap": 0.119,
+   "segment": "bottom",
+   "truck": {
+    "x": 5.317,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -2.183,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.733,
+   "overview": false,
+   "lap": 0.12,
+   "segment": "bottom",
+   "truck": {
+    "x": 5.533,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -1.967,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.75,
+   "overview": false,
+   "lap": 0.121,
+   "segment": "bottom",
+   "truck": {
+    "x": 5.75,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -1.75,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.767,
+   "overview": false,
+   "lap": 0.122,
+   "segment": "bottom",
+   "truck": {
+    "x": 5.967,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -1.533,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.783,
+   "overview": false,
+   "lap": 0.122,
+   "segment": "bottom",
+   "truck": {
+    "x": 6.183,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -1.317,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.8,
+   "overview": false,
+   "lap": 0.123,
+   "segment": "bottom",
+   "truck": {
+    "x": 6.4,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -1.1,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.817,
+   "overview": false,
+   "lap": 0.124,
+   "segment": "bottom",
+   "truck": {
+    "x": 6.617,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -0.883,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.833,
+   "overview": false,
+   "lap": 0.124,
+   "segment": "bottom",
+   "truck": {
+    "x": 6.833,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -0.667,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.85,
+   "overview": false,
+   "lap": 0.125,
+   "segment": "bottom",
+   "truck": {
+    "x": 7.05,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -0.45,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.867,
+   "overview": false,
+   "lap": 0.126,
+   "segment": "bottom",
+   "truck": {
+    "x": 7.267,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -0.233,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.883,
+   "overview": false,
+   "lap": 0.127,
+   "segment": "bottom",
+   "truck": {
+    "x": 7.483,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": -0.017,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.9,
+   "overview": false,
+   "lap": 0.127,
+   "segment": "bottom",
+   "truck": {
+    "x": 7.7,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 0.2,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.917,
+   "overview": false,
+   "lap": 0.128,
+   "segment": "bottom",
+   "truck": {
+    "x": 7.917,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 0.417,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.933,
+   "overview": false,
+   "lap": 0.129,
+   "segment": "bottom",
+   "truck": {
+    "x": 8.133,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 0.633,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.95,
+   "overview": false,
+   "lap": 0.13,
+   "segment": "bottom",
+   "truck": {
+    "x": 8.35,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 0.85,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.967,
+   "overview": false,
+   "lap": 0.13,
+   "segment": "bottom",
+   "truck": {
+    "x": 8.567,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 1.067,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 2.983,
+   "overview": false,
+   "lap": 0.131,
+   "segment": "bottom",
+   "truck": {
+    "x": 8.783,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 1.283,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3,
+   "overview": false,
+   "lap": 0.132,
+   "segment": "bottom",
+   "truck": {
+    "x": 9,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 1.5,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.017,
+   "overview": true,
+   "lap": 0.133,
+   "segment": "bottom",
+   "truck": {
+    "x": 9.217,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 1.717,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.033,
+   "overview": true,
+   "lap": 0.133,
+   "segment": "bottom",
+   "truck": {
+    "x": 9.433,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 1.933,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.05,
+   "overview": true,
+   "lap": 0.134,
+   "segment": "bottom",
+   "truck": {
+    "x": 9.65,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 2.15,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.067,
+   "overview": true,
+   "lap": 0.135,
+   "segment": "bottom",
+   "truck": {
+    "x": 9.867,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 2.367,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.083,
+   "overview": true,
+   "lap": 0.135,
+   "segment": "bottom",
+   "truck": {
+    "x": 10.083,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 2.583,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.1,
+   "overview": true,
+   "lap": 0.136,
+   "segment": "bottom",
+   "truck": {
+    "x": 10.3,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 2.8,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.117,
+   "overview": true,
+   "lap": 0.137,
+   "segment": "bottom",
+   "truck": {
+    "x": 10.517,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 3.017,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.133,
+   "overview": true,
+   "lap": 0.138,
+   "segment": "bottom",
+   "truck": {
+    "x": 10.733,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 3.233,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.15,
+   "overview": true,
+   "lap": 0.138,
+   "segment": "bottom",
+   "truck": {
+    "x": 10.95,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 3.45,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.167,
+   "overview": true,
+   "lap": 0.139,
+   "segment": "bottom",
+   "truck": {
+    "x": 11.167,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 3.667,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.183,
+   "overview": true,
+   "lap": 0.14,
+   "segment": "bottom",
+   "truck": {
+    "x": 11.383,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 3.883,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.2,
+   "overview": true,
+   "lap": 0.141,
+   "segment": "bottom",
+   "truck": {
+    "x": 11.6,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 4.1,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.217,
+   "overview": true,
+   "lap": 0.141,
+   "segment": "bottom",
+   "truck": {
+    "x": 11.817,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 4.317,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.233,
+   "overview": true,
+   "lap": 0.142,
+   "segment": "bottom",
+   "truck": {
+    "x": 12.033,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 4.533,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.25,
+   "overview": true,
+   "lap": 0.143,
+   "segment": "bottom",
+   "truck": {
+    "x": 12.25,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 4.75,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.267,
+   "overview": true,
+   "lap": 0.144,
+   "segment": "bottom",
+   "truck": {
+    "x": 12.467,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 4.967,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.283,
+   "overview": true,
+   "lap": 0.144,
+   "segment": "bottom",
+   "truck": {
+    "x": 12.683,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 5.183,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.3,
+   "overview": true,
+   "lap": 0.145,
+   "segment": "bottom",
+   "truck": {
+    "x": 12.9,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 5.4,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.317,
+   "overview": true,
+   "lap": 0.146,
+   "segment": "bottom",
+   "truck": {
+    "x": 13.117,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 5.617,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.333,
+   "overview": true,
+   "lap": 0.146,
+   "segment": "bottom",
+   "truck": {
+    "x": 13.333,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 5.833,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.35,
+   "overview": true,
+   "lap": 0.147,
+   "segment": "bottom",
+   "truck": {
+    "x": 13.55,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 6.05,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.367,
+   "overview": true,
+   "lap": 0.148,
+   "segment": "bottom",
+   "truck": {
+    "x": 13.767,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 6.267,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.383,
+   "overview": true,
+   "lap": 0.149,
+   "segment": "bottom",
+   "truck": {
+    "x": 13.983,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 6.483,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.4,
+   "overview": true,
+   "lap": 0.149,
+   "segment": "bottom",
+   "truck": {
+    "x": 14.2,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 6.7,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.417,
+   "overview": true,
+   "lap": 0.15,
+   "segment": "bottom",
+   "truck": {
+    "x": 14.417,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 6.917,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.433,
+   "overview": true,
+   "lap": 0.151,
+   "segment": "bottom",
+   "truck": {
+    "x": 14.633,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 7.133,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.45,
+   "overview": true,
+   "lap": 0.152,
+   "segment": "bottom",
+   "truck": {
+    "x": 14.85,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 7.35,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.467,
+   "overview": true,
+   "lap": 0.152,
+   "segment": "bottom",
+   "truck": {
+    "x": 15.067,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 7.567,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.483,
+   "overview": true,
+   "lap": 0.153,
+   "segment": "bottom",
+   "truck": {
+    "x": 15.283,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 7.783,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  },
+  {
+   "t": 3.5,
+   "overview": true,
+   "lap": 0.154,
+   "segment": "bottom",
+   "truck": {
+    "x": 15.5,
+    "y": 28,
+    "angle": 0
+   },
+   "trailer": {
+    "x": 8,
+    "y": 28,
+    "angle": 0
+   },
+   "hitchYawDeg": 0,
+   "peakYawDeg": 0
+  }
+ ]
+}

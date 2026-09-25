@@ -1,5 +1,5 @@
 import { RAPIER } from './physics.js';
-import { cfg } from './config.js';
+import { cfg, MODEL } from './config.js';
 import { sampleLine, PERIMETER } from './track.js';
 
 // Truck + flatbed trailer. All dimensions in metres; local +x is forward.
@@ -43,10 +43,18 @@ TRAILER.lateralEffMass = 1 / (1 / TRAILER.mass + TRAILER.axleX ** 2 / TRAILER.in
 // 13 m/s no matter what the slider said.
 //
 // Looseness lowers cornering stiffness: softer tyres, a slacker spring, more swing.
-// The floor is 18000, not lower: below about 15000 the trailer stops recovering
+// The floor is 16000, not lower: below about 15000 the trailer stops recovering
 // between corners and walks itself into a jackknife.
-const STIFF_MAX = 90000; // N per radian of slip: tracks tightly, no visible swing
-const STIFF_MIN = 18000; // N per radian: ~10deg of swing past the corner angle
+const STIFF_MAX = MODEL.trailerStiffMax; // tracks tightly, no visible swing
+const STIFF_MIN = MODEL.trailerStiffMin; // ~11deg of swing past the corner angle
+
+// Hitch friction: a torque against the trailer's yaw rate RELATIVE to the truck.
+// Without it the swing rang on as a slow 2-3deg counter-swing and took 2.6s to
+// settle. Rapier's own angular damping is no substitute: it damps absolute spin,
+// so it fights the corner itself and shifts the steady angle instead.
+// Measured at 13 m/s, looseness 1: 11.3deg of swing, settled (+-1deg) 1.4s after
+// the peak. At 17 m/s it stays bounded (<24deg) with no jackknife.
+const HITCH_DAMP = MODEL.hitchDamp;
 // Interpolated in compliance (1/stiffness), which spreads the slider evenly.
 // Geometric spacing bunched all the movement into the top quarter.
 export const stiffnessForLooseness = (loose) => {
@@ -56,7 +64,7 @@ export const stiffnessForLooseness = (loose) => {
 
 // Friction limit of the tyres, a bit above the cornering demand so the trailer
 // holds a clean corner but lets go when shoved or hit.
-const GRIP_CAP = 10000; // N
+const GRIP_CAP = MODEL.trailerGripCap;
 
 const rot = (a, x, y) => ({ x: x * Math.cos(a) - y * Math.sin(a), y: x * Math.sin(a) + y * Math.cos(a) });
 
@@ -88,8 +96,8 @@ export class Rig {
       RAPIER.RigidBodyDesc.dynamic()
         .setTranslation(hx + back.x, hy + back.y)
         .setRotation(start.angle)
-        .setLinearDamping(0.15)
-        .setAngularDamping(0.05)
+        .setLinearDamping(MODEL.trailerLinearDamping)
+        .setAngularDamping(MODEL.trailerAngularDamping)
         // Mass is set explicitly: the deck collider is a weightless sensor.
         .setAdditionalMassProperties(TRAILER.mass, { x: 0, y: 0 }, TRAILER.inertia)
     );
@@ -127,10 +135,17 @@ export class Rig {
     // hitch joint and every contact see the truck's velocity.
     this.s = (this.s + cfg.trailerSpeed * dt) % PERIMETER;
     const p = sampleLine(this.s);
+    const truckYawRate = Math.atan2(Math.sin(p.angle - this.truck.rotation()), Math.cos(p.angle - this.truck.rotation())) / dt;
     this.truck.setNextKinematicTranslation({ x: p.x, y: p.y });
     this.truck.setNextKinematicRotation(p.angle);
 
     this.applyTrailerGrip(dt);
+    this.applyHitchDamping(dt, truckYawRate);
+  }
+
+  applyHitchDamping(dt, truckYawRate) {
+    const rel = this.trailer.angvel() - truckYawRate;
+    this.trailer.applyTorqueImpulse(-HITCH_DAMP * rel * dt, true);
   }
 
   /**
